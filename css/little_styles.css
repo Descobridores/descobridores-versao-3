@@ -56,6 +56,12 @@ body {
   background-color: #f37272;
   border-bottom-right-radius: 100%;
 }
+.menu_toggle:active i {
+  opacity: 0.8;
+}
+.menu_toggle i {
+  color: #f0f0f0;
+}
 .menu_toggle .menu_open,
 .menu_toggle .menu_close {
   position: absolute;
@@ -73,12 +79,6 @@ body {
   transform-origin: -100px -160px;
 }
 
-.menu_toggle:active i {
-  opacity: 0.8;
-}
-.menu_toggle i {
-  color: #f0f0f0;
-}
 .menu_items {
   position: fixed;
   bottom: 0;
