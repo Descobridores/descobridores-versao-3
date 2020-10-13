@@ -28,7 +28,7 @@
   .content_inner {
     height: 50%;
     overflow-y: auto;
-    background: url('../assets/img/Capa.png');
+    background: url('../assets/img/Capa.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
   }
@@ -210,7 +210,7 @@
     padding-bottom: 6rem;
     text-align: center;
     color: #fff;
-    background-image: url('../assets/img/Capa.png');
+    background-image: url('../assets/img/Capa.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     position: relative;
