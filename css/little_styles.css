@@ -16,3 +16,8 @@
   border-radius: 50%;
   border: solid 6px #dfe0e1;
 }
+
+.logo {
+  height: 70px;
+  margin-bottom: 10px;
+}
