@@ -38,6 +38,35 @@
       href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="assets/img/Logos/Logo.jpg" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/little_styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body id="page-top">
     <!-- Masthead-->
@@ -64,36 +93,115 @@
           <i class="fas fa-bars ml-1"></i>
         </button> -->
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto" style="margin-right: auto !important;">
+          <ul
+            class="navbar-nav text-uppercase ml-auto"
+            style="margin-right: auto !important"
+          >
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#descobridores"style="color: #ca6582;"
+              <a
+                class="nav-link js-scroll-trigger"
+                href="#descobridores"
+                style="color: #ca6582; font-size: 18px"
                 ><b>Descobridores</b></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projeto"style="color: #ca6582;"><b>Projeto</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#desafios"style="color: #ca6582;"
-                ><b>Desafios</b></a
+              <a
+                class="nav-link js-scroll-trigger"
+                href="#projeto"
+                style="color: #ca6582; font-size: 18px"
+                ><b>Projeto</b></a
               >
             </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#desafios"
+                style="color: #ca6582; font-size: 18px"
+                id="navbarDropdown"
+                ><b>Desafios</b></a
+              >
+              <div
+                class="dropdown-menu dropdown-content"
+                aria-labelledby="navbarDropdown"
+              >
+                <a
+                  class="dropdown-item"
+                  onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 0);"
+                  href="desafio.html"
+                  >1 - Desafio da Pá suja</a
+                >
+                <a
+                  class="dropdown-item"
+                  onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 1);"
+                  href="desafio.html"
+                  >2 - Torre colorida da Matilda</a
+                >
+                <a
+                  class="dropdown-item"
+                  onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 2);"
+                  href="desafio.html"
+                  >3 - Palitos coloridos</a
+                >
+                <a
+                  class="dropdown-item"
+                  onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 3);"
+                  href="desafio.html"
+                  >4 - Desafio da ilha</a
+                >
+                <a
+                  class="dropdown-item"
+                  onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 4);"
+                  href="desafio.html"
+                  >5 - Desafio da escada</a
+                >
+                <a
+                  class="dropdown-item"
+                  onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 5);"
+                  href="desafio.html"
+                  >6 - Oraganizando o curral</a
+                >
+              </div>
+            </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#solucoes" style="color: #ca6582;"
+              <a
+                class="nav-link js-scroll-trigger"
+                href="#solucoes"
+                style="color: #ca6582; font-size: 18px"
                 ><b>Educadores</b></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#videos"style="color: #ca6582;"><b>Vídeos</b></a>
+              <a
+                class="nav-link js-scroll-trigger"
+                href="#videos"
+                style="color: #ca6582; font-size: 18px"
+                ><b>Vídeos</b></a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#fotos"style="color: #ca6582;"><b>Fotos</b></a>
+              <a
+                class="nav-link js-scroll-trigger"
+                href="#fotos"
+                style="color: #ca6582; font-size: 18px"
+                ><b>Fotos</b></a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contato"style="color: #ca6582;"><b>Contato</b></a>
+              <a
+                class="nav-link js-scroll-trigger"
+                href="#contato"
+                style="color: #ca6582; font-size: 18px"
+                ><b>Contato</b></a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#liks"style="color: #ca6582;"><b>Links</b></a>
+              <a
+                class="nav-link js-scroll-trigger"
+                href="#liks"
+                style="color: #ca6582; font-size: 18px"
+                ><b>Links</b></a
+              >
             </li>
           </ul>
         </div>
@@ -111,26 +219,26 @@
             />
           </a>
         </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <a href="#">
-              <img
-                class="img-fluid img-thumbnail"
-                src="./assets/img/bandeira.png"
-                style="height: 250px; width: 300px"
-              />
-            </a>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-            <a href="#">
-              <img
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <a href="#">
+            <img
+              class="img-fluid img-thumbnail"
+              src="./assets/img/bandeira.png"
+              style="height: 250px; width: 300px"
+            />
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <a href="#">
+            <img
               class="img-fluid img-thumbnail"
               src="./assets/img/curral.png"
               style="height: 250px; width: 300px"
             />
-            </a>
-          </div>
+          </a>
+        </div>
       </div>
-      <br>
+      <br />
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12">
           <a href="#">
@@ -157,30 +265,24 @@
               src="./assets/img/varetas.png"
               style="height: 250px; width: 300px"
             />
-         </a>
+          </a>
         </div>
       </div>
-  </div>
-  <br>
-  <hr>
+    </div>
+    <br />
+    <hr />
     <!-- Footer-->
     <footer class="footer py-2">
       <div class="container">
         <div class="row mt-3">
           <div class="col-lg-4 col-md-4 col-sm-4 text-center">
             <a href="https://ufmg.br/">
-              <img
-                class="logo img-thumbnail"
-                src="assets/img/Logos/ufmg.png"
-              />
+              <img class="logo img-thumbnail" src="assets/img/Logos/ufmg.png" />
             </a>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 text-center">
             <a href="http://www.cp.ufmg.br/">
-              <img
-                class="logo img-thumbnail"
-                src="assets/img/Logos/cp.jpeg"
-              />
+              <img class="logo img-thumbnail" src="assets/img/Logos/cp.jpeg" />
             </a>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 text-center">
@@ -198,7 +300,6 @@
           <div class="col-lg-12">Copyright © Descobridores 2020</div>
         </div>
       </div>
-    </div>
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

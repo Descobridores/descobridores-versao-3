@@ -1,13 +1,67 @@
 @media screen and (max-width: 1000px) {
-  #SubTitle {
+  .SubTitle {
     font-size: 30px;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  #SubTitle {
+  .SubTitle {
     font-size: 40px;
   }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.BotaoNav {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  border: solid 3px #bbdbff;
+  border-radius: 20px;
+}
+
+.BotaoNav:active {
+  border: solid 3px #88c4ff;
+}
+
+.BotaoNav:hover {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  border: solid 3px #88c4ff;
+  background-color: #bbdbff;
+  border-radius: 20px;
+}
+
+.BotaoNavAtual {
+  border: solid 3px #88c4ff;
+  background-color: #bbdbff;
+  border-radius: 20px;
 }
 
 #service_image {
@@ -20,4 +74,164 @@
 .logo {
   height: 70px;
   margin-bottom: 10px;
+}
+
+.TituloDesafio {
+  font-family: cursive;
+}
+
+.resposta {
+  border: #88c4ff solid 3px;
+  border-radius: 10px;
+}
+.resposta h2 {
+  color: #3298ff;
+}
+
+.resposta_textarea {
+  width: 700px;
+  height: 200px;
+}
+
+.opcoes:first-of-type {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.opcao {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.opcao input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+  outline: none;
+}
+
+input:checked {
+  border: 6px solid #88c4ff;
+  outline: none;
+}
+
+button,
+legend {
+  color: #ffffff;
+  background-color: #88c4ff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 0;
+  font-size: 14px;
+  outline: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:hover,
+button:focus {
+  background-color: #3298ff;
+  outline: none;
+}
+
+button:active {
+  background-color: white;
+  color: black;
+  outline: none;
+}
+
+.AntesProximo button {
+  height: 50px;
+  margin-top: 10px;
+}
+
+.AntesProximo button img {
+  height: 40px;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.wrapper main {
+  flex: 1;
+}
+
+.TituloPagina {
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  border-radius: 10px;
+  line-height: 100px;
+  background-color: #303033;
+}
+
+.Lista {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Lista li {
+  background-color: rgb(180, 180, 180);
+  width: 85%;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+}
+
+.Lista li h4 {
+  text-align: center;
+  margin: auto;
+}
+
+.Lista li h4 a {
+  color: #303033;
+  line-height: 50px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.stop-action {
+  opacity: 0.5;
+}
+
+.game {
+  width: 600px;
+  height: 600px;
+  /*	margin: 0 auto;
+  background-color: white;
+  color: black;
+  border: 6px solid black;
+  border-radius: 10px;
+*/
+  display: grid;
+  grid-template: repeat(3, 0.25fr) / repeat(3, 0.45fr);
+}
+
+.game > div {
+  border: 6px solid black;
+  /*border-radius: 2px;*/
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
