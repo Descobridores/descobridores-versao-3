@@ -212,6 +212,18 @@ button:active {
   opacity: 0.5;
 }
 
+.zoom {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.zoom:hover {
+  -webkit-transform: scale(1.25);
+  transform: scale(1.25);
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+}
+
 .game {
   width: 600px;
   height: 600px;
