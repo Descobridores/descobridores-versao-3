@@ -215,13 +215,15 @@ button:active {
 .zoom {
   transition: all 0.5s;
   cursor: pointer;
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
 }
 
 .zoom:hover {
   -webkit-transform: scale(1.25);
   transform: scale(1.25);
-  -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
-  filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+  position: absolute;
+  z-index: 1;
 }
 
 .game {
