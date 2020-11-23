@@ -4,7 +4,7 @@ const tic_tac_toe = {
   board: ['', '', 'P', '', '', '', 'C', '', ''],
   symbols: {
     options: ['P', 'C', 'B', ''],
-    turn_index: 0,
+    turn_index: 3,
     id_animal: 0,
     change: function (element, id) {
       this.turn_index = element
@@ -22,7 +22,7 @@ const tic_tac_toe = {
   // FUNCTIONS
   init: function (container) {
     this.container_element = container
-    this.turn_index = 3
+    this.symbols.turn_index = 3
   },
 
   init_botoes: function (container) {
@@ -219,17 +219,17 @@ const tic_tac_toe = {
       this.tentativas +
       '</h4>' +
       '<div class="row">' +
-      '<button id="porco1" class="btn" onclick="tic_tac_toe.symbols.change(0, 1)" style="height: 100px; width: 100px"> <img src="./assets/img/porco.png" style="height: 70px; width: 70px" /> Porco</button>' +
-      '<button id="porco2" class="btn" onclick="tic_tac_toe.symbols.change(0, 2)" style="height: 100px; width: 100px"> <img src="./assets/img/porco.png" style="height: 70px; width: 70px" /> Porco</button>' +
+      '<button id="porco1" class="btn" onclick="tic_tac_toe.symbols.change(0, 1)" style="height: 100px; width: 100px"> <img src="./assets/img/porco.png" style="height: 70px; width: 70px" /></button>' +
+      '<button id="porco2" class="btn" onclick="tic_tac_toe.symbols.change(0, 2)" style="height: 100px; width: 100px"> <img src="./assets/img/porco.png" style="height: 70px; width: 70px" /></button>' +
       '</div>' +
       '<div class="row">' +
-      '<button id="cavalo1" class="btn" onclick="tic_tac_toe.symbols.change(1, 3)" style="height: 100px; width: 100px"> <img src="./assets/img/cavalo.png" style="height: 70px; width: 70px"/> Cavalo</button>' +
-      '<button id="cavalo2" class="btn" onclick="tic_tac_toe.symbols.change(1, 4)" style="height: 100px; width: 100px"> <img src="./assets/img/cavalo.png" style="height: 70px; width: 70px"/> Cavalo</button>' +
+      '<button id="cavalo1" class="btn" onclick="tic_tac_toe.symbols.change(1, 3)" style="height: 100px; width: 100px"> <img src="./assets/img/cavalo.png" style="height: 70px; width: 70px"/></button>' +
+      '<button id="cavalo2" class="btn" onclick="tic_tac_toe.symbols.change(1, 4)" style="height: 100px; width: 100px"> <img src="./assets/img/cavalo.png" style="height: 70px; width: 70px"/></button>' +
       '</div>' +
       '<div class="row">' +
-      '<button id="boi1" class="btn" onclick="tic_tac_toe.symbols.change(2, 5)" style="height: 100px; width: 100px"> <img src="./assets/img/boi.png" style="height: 70px; width: 70px"/><br /> Boi</button>' +
-      '<button id="boi2" class="btn" onclick="tic_tac_toe.symbols.change(2, 6)" style="height: 100px; width: 100px"> <img src="./assets/img/boi.png" style="height: 70px; width: 70px"/><br /> Boi</button>' +
-      '<button id="boi3" class="btn" onclick="tic_tac_toe.symbols.change(2, 7)" style="height: 100px; width: 100px"> <img src="./assets/img/boi.png" style="height: 70px; width: 70px"/><br /> Boi</button>' +
+      '<button id="boi1" class="btn" onclick="tic_tac_toe.symbols.change(2, 5)" style="height: 100px; width: 100px"> <img src="./assets/img/boi.png" style="height: 70px; width: 70px"/><br /></button>' +
+      '<button id="boi2" class="btn" onclick="tic_tac_toe.symbols.change(2, 6)" style="height: 100px; width: 100px"> <img src="./assets/img/boi.png" style="height: 70px; width: 70px"/><br /></button>' +
+      '<button id="boi3" class="btn" onclick="tic_tac_toe.symbols.change(2, 7)" style="height: 100px; width: 100px"> <img src="./assets/img/boi.png" style="height: 70px; width: 70px"/><br /></button>' +
       '</div>' +
       '<br /><br /> <button class="btn btn-primary" onclick="tic_tac_toe.start()"> Tentar de novo </button>'
 
@@ -254,7 +254,7 @@ const tic_tac_toe = {
   start: function () {
     if (this.check_board_position()) this.tentativas++
     this.board = ['', '', 'P', '', '', '', 'C', '', '']
-    this.symbols.turn_index = 0
+    this.symbols.turn_index = 3
     this.wrong_indexs = []
     this.porco = 2
     this.cavalo = 2

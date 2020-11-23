@@ -233,8 +233,6 @@ button:active {
   transform: scale(1.25);
   -webkit-filter: drop-shadow(15px 10px 5px rgba(40, 40, 40, 0.5));
   filter: drop-shadow(15px 10px 5px rgba(40, 40, 40, 0.5));
-  position: absolute;
-  z-index: 1;
 }
 
 .game {
