@@ -213,6 +213,12 @@ button:active {
   text-align: center;
 }
 
+.img-flex {
+  padding: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+
 .stop-action {
   opacity: 0.5;
 }
