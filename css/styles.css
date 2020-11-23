@@ -6329,7 +6329,7 @@ a.close.disabled {
 .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
   outline: 0;
   opacity: 0.9;
@@ -6381,7 +6381,7 @@ a.close.disabled {
   margin-left: 3px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #000;
+  background-color: #ffffff;
   background-clip: padding-box;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -10447,9 +10447,9 @@ p {
 }
 
 @media (min-width: 768px) {
-  section {
+  /* section {
     padding: 9rem 0;
-  }
+  } */
 }
 ::-moz-selection {
   background: #007bff;
@@ -10493,8 +10493,8 @@ img::-moz-selection {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  /* padding-top: 1rem;
+  padding-bottom: 1rem; */
   background-color: white;
 }
 #mainNav .navbar-toggler {
@@ -10521,9 +10521,7 @@ img::-moz-selection {
   height: 1.5rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Gotham';
   font-size: 0.95rem;
   color: black;
   letter-spacing: 0.0625em;
@@ -10536,8 +10534,6 @@ img::-moz-selection {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
     border: none;
     background-color: white;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
@@ -10551,8 +10547,6 @@ img::-moz-selection {
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     background-color: white;
   }
   #mainNav.navbar-shrink .navbar-brand {
@@ -10570,8 +10564,8 @@ img::-moz-selection {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
   text-align: center;
   color: #fff;
   background-image: url('../assets/img/Capa.jpg');
@@ -10579,7 +10573,8 @@ header.masthead {
   background-attachment: scroll;
   position: relative;
   background-size: 100% 100%;
-  background-position: center 100px;
+  /*background-position: center 100px;*/
+  margin-top: 50px;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -10602,8 +10597,8 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
+    padding-top: 10rem;
+    padding-bottom: 9.5rem;
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;

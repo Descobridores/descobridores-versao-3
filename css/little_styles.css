@@ -39,6 +39,11 @@
   display: block;
 }
 
+.BotaoNavMain {
+  color: #ca6582;
+  font-size: 18px;
+}
+
 .BotaoNav {
   margin-top: 1px;
   margin-bottom: 1px;
