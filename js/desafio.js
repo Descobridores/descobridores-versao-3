@@ -130,3 +130,48 @@ function ChecaSetas(indice) {
       )
   }
 }
+
+// LOGICA BUSCA
+function inserir_imagens(busca) {
+  var i
+  var indexs = []
+  var imagens = document.getElementById('imagens')
+  var titulo = document.getElementById('titulo')
+
+  for (var i = 0; i < Titulos.length; i++) {
+    // converte strings para letras minusculas
+    if (Titulos[i].toLowerCase().includes(busca.toLowerCase())) {
+      indexs.push(i)
+    }
+  }
+
+  titulo.innerHTML =
+    '<h2>Resultados da pesquisa por: ' + '"' + busca + '"' + ' </h2><hr>'
+
+  for (i = 0; i < indexs.length; i++) {
+    switch (indexs[i]) {
+      case 2:
+        imagens.innerHTML =
+          '<div class="col-lg-4 col-md-6 col-sm-12">' +
+          '<a onclick="window.localStorage.setItem("aleatorio","false"); window.localStorage.setItem("indice", 2);" href="./desafio.html">' +
+          '<img class="img-fluid img-thumbnail zoom" src="./assets/img/Vinhetas/palitos.jpg" style="height: 250px; width: 250px"/>' +
+          '</a> </div>'
+        break
+      case 4:
+        imagens.innerHTML =
+          '<div class="col-lg-4 col-md-6 col-sm-12">' +
+          '<a onclick="window.localStorage.setItem("aleatorio","false"); window.localStorage.setItem("indice", 4);" href="./desafio.html">' +
+          '<img class="img-fluid img-thumbnail zoom" src="./assets/img/Vinhetas/escada.jpg" style="height: 250px; width: 250px"/>' +
+          '</a> </div>'
+        break
+      case 5:
+        imagens.innerHTML =
+          '<div class="col-lg-4 col-md-6 col-sm-12">' +
+          '<a onclick="window.localStorage.setItem("aleatorio","false"); window.localStorage.setItem("indice", 5);" href="./desafio.html">' +
+          '<img class="img-fluid img-thumbnail zoom" src="./assets/img/Vinhetas/curral.jpg" style="height: 250px; width: 250px"/>' +
+          '</a> </div>'
+
+        break
+    }
+  }
+}

@@ -38,6 +38,11 @@
       href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
       rel="stylesheet"
     />
+    <script>
+      window.onload = function () {
+        inserir_imagens(window.localStorage.getItem('busca'))
+      }
+    </script>
   </head>
   <body>
     <div class="wrapper">
@@ -167,27 +172,6 @@
                     >
                   </div>
                 </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link"
-                    href="./desafios.html"
-                    style="color: #ec4326; font-size: 18px"
-                    id="navbarDropdown"
-                    ><b>Buscar</b></a
-                  >
-                  <div
-                    class="dropdown-menu dropdown-content"
-                    aria-labelledby="navbarDropdown"
-                  >
-                  <form>
-                    <input type="text" id="busca" placeholder="Buscar Desafio" />
-                  </form>
-                  <button
-                    onclick="window.localStorage.setItem('busca',document.getElementById('busca').value);"
-                  >
-                    <a href="busca.html">Buscar</a>
-                  </button>
-                </li>
                 <li class="nav-item">
                   <a
                     class="nav-link js-scroll-trigger"
@@ -235,110 +219,8 @@
         <br />
         <!-- Page -->
         <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <a href="#">
-                <img
-                  class="img-fluid img-thumbnail zoom"
-                  src="./assets/img/Vinhetas/cachorros.jpg"
-                  style="height: 250px; width: 250px"
-                />
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <a href="#">
-                <img
-                  class="img-fluid img-thumbnail zoom"
-                  src="./assets/img/Vinhetas/bandeira.jpg"
-                  style="height: 250px; width: 250px"
-                />
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <a
-                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 5);"
-                href="./desafio.html"
-              >
-                <img
-                  class="img-fluid img-thumbnail zoom"
-                  src="./assets/img/Vinhetas/curral.jpg"
-                  style="height: 250px; width: 250px"
-                />
-              </a>
-            </div>
-          </div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <a href="#">
-                <img
-                  class="img-fluid img-thumbnail zoom"
-                  src="./assets/img/Vinhetas/alturas.jpg"
-                  style="height: 250px; width: 250px"
-                />
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <a
-                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 4);"
-                href="./desafio.html"
-              >
-                <img
-                  class="img-fluid img-thumbnail zoom"
-                  src="./assets/img/Vinhetas/escada.jpg"
-                  style="height: 250px; width: 250px"
-                />
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <a href="#">
-                <img
-                  class="img-fluid img-thumbnail zoom"
-                  src="./assets/img/Vinhetas/flores.jpg"
-                  style="height: 250px; width: 250px"
-                />
-              </a>
-            </div>
-          </div>
-          <br />
-          <br />
-          <br />
-          <br />
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <a
-                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 2);"
-                href="./desafio.html"
-              >
-                <img
-                  class="img-fluid img-thumbnail zoom"
-                  src="./assets/img/Vinhetas/palitos.jpg"
-                  style="height: 250px; width: 250px"
-                />
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <a href="#">
-                <img
-                  class="img-fluid img-thumbnail zoom"
-                  src="./assets/img/Vinhetas/triangulos.jpg"
-                  style="height: 250px; width: 250px"
-                />
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <a href="#">
-                <img
-                  class="img-fluid img-thumbnail zoom"
-                  src="./assets/img/Vinhetas/varetas.jpg"
-                  style="height: 250px; width: 250px"
-                />
-              </a>
-            </div>
-          </div>
+          <div id="titulo"></div>
+          <div id="imagens" class="row"></div>
         </div>
         <br />
         <hr />
