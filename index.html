@@ -179,14 +179,19 @@
                     class="dropdown-menu dropdown-content"
                     aria-labelledby="navbarDropdown"
                   >
-                  <form>
-                    <input type="text" id="busca" placeholder="Buscar Desafio" />
-                  </form>
-                  <button
-                    onclick="window.localStorage.setItem('busca',document.getElementById('busca').value);"
-                  >
-                    <a href="busca.html">Buscar</a>
-                  </button>
+                    <form style="display: flex">
+                      <input
+                        type="text"
+                        id="busca"
+                        placeholder="Buscar Desafio"
+                      />
+                      <button
+                        onclick="window.localStorage.setItem('busca',document.getElementById('busca').value);"
+                      >
+                        <a href="busca.html">Buscar</a>
+                      </button>
+                    </form>
+                  </div>
                 </li>
                 <li class="nav-item">
                   <a
