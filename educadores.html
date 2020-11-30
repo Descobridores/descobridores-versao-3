@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Viver é aprender" />
+    <meta name="author" content="WebDevelopers" />
+    <title>Os Descobridores da Matemática</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/Logos/Logo.jpg" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/little_styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="page-top">
+    <div class="wrapper">
+      <main>
+        <!-- Masthead-->
+        <div style="background-color: #1b2038" class="hall text-light pt-0">
+          <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2">
+              <!-- IMAGEM DA LOGO -->
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 my-auto">
+              <h1 class="text-uppercase" style="color: #f1cbcb">
+                Descobridores Da Matemática
+              </h1>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <img
+                id="logo"
+                class="float-right img-flex"
+                src="./assets/img/capa.jpg"
+                style="height: 300px; width: 500px"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+          <div class="container">
+            <button
+              class="navbar-toggler navbar-toggler-right"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarResponsive"
+              aria-controls="navbarResponsive"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              Menu
+              <i class="fas fa-bars ml-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul
+                class="navbar-nav text-uppercase ml-auto"
+                style="margin-right: auto !important"
+              >
+                <li class="nav-item">
+                  <a
+                    class="nav-link js-scroll-trigger"
+                    href="./descobridores.html"
+                    style="color: #ec4326; font-size: 18px"
+                    ><b>Descobridores</b></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link js-scroll-trigger"
+                    href="./projeto.html"
+                    style="color: #ec4326; font-size: 18px"
+                    ><b>Projeto</b></a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="./desafios.html"
+                    style="color: #ec4326; font-size: 18px"
+                    id="navbarDropdown"
+                    ><b>Desafios</b></a
+                  >
+                  <div
+                    class="dropdown-menu dropdown-content"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <a
+                      class="dropdown-item"
+                      onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 0);"
+                      href="#"
+                      >1 - Desafio dos cachorros</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 1);"
+                      href="#"
+                      >2 - Desafio das bandeiras</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 5);"
+                      href="./desafio.html"
+                      >3 - Organizando o curral</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 3);"
+                      href="#"
+                      >4 - Gincana das altuas</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 4);"
+                      href="desafio.html"
+                      >5 - Desafio da escada</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 5);"
+                      href="#"
+                      >6 - Flores no jardim</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 2);"
+                      href="./desafio.html"
+                      >7 - Palitos coloridos</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 5);"
+                      href="#"
+                      >8 - Desafio dos triangulos</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 5);"
+                      href="#"
+                      >9 - Desafio das varetas</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link js-scroll-trigger"
+                    href="./educadores.html"
+                    style="color: #ec4326; font-size: 18px"
+                    ><b>Educadores</b></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link js-scroll-trigger"
+                    href="./videos.html"
+                    style="color: #ec4326; font-size: 18px"
+                    ><b>Vídeos</b></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link js-scroll-trigger"
+                    href="./fotos.html"
+                    style="color: #ec4326; font-size: 18px"
+                    ><b>Fotos</b></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link js-scroll-trigger"
+                    href="./contato.html"
+                    style="color: #ec4326; font-size: 18px"
+                    ><b>Contato</b></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link js-scroll-trigger"
+                    href="./links.html"
+                    style="color: #ec4326; font-size: 18px"
+                    ><b>Links</b></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Pagina -->
+        <section class="container">
+          <h1 class="TituloPagina">Soluções</h1>
+        </section>
+      </main>
+      <footer class="footer py-2">
+        <div class="container">
+          <div class="row mt-3">
+            <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+              <a href="https://ufmg.br/">
+                <img
+                  class="logo img-thumbnail"
+                  src="assets/img/Logos/ufmg.png"
+                />
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+              <a href="http://www.cp.ufmg.br/">
+                <img
+                  class="logo img-thumbnail"
+                  src="assets/img/Logos/cp.jpeg"
+                />
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+              <a href="https://www.icex.ufmg.br/">
+                <img
+                  class="logo img-thumbnail"
+                  src="assets/img/Logos/icex.jpeg"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-12">Copyright © Descobridores 2020</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
