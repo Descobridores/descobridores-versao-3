@@ -61,8 +61,10 @@
               <!-- IMAGEM DA LOGO -->
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 my-auto">
-              <h1 class="text-uppercase" style="color: #f1cbcb">
-                Descobridores Da Matemática
+              <h1 class="text-uppercase">
+                <a href="./index.html" style="color: #f1cbcb">
+                  Descobridores Da Matemática
+                </a>
               </h1>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -95,6 +97,36 @@
                 class="navbar-nav text-uppercase ml-auto"
                 style="margin-right: auto !important"
               >
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="./desafios.html"
+                    id="navbarDropdown"
+                  >
+                    <img
+                      class="Lupa"
+                      src="./assets/img/Lupa.png"
+                      alt="Buscar"
+                    />
+                  </a>
+                  <div
+                    class="dropdown-menu dropdown-content"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <form style="display: flex">
+                      <input
+                        type="text"
+                        id="busca"
+                        placeholder="Buscar Desafio"
+                      />
+                      <button
+                        onclick="window.localStorage.setItem('busca',document.getElementById('busca').value);"
+                      >
+                        <a href="busca.html">Buscar</a>
+                      </button>
+                    </form>
+                  </div>
+                </li>
                 <li class="nav-item">
                   <a
                     class="nav-link js-scroll-trigger"
@@ -172,28 +204,7 @@
                     >
                   </div>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link" href="./desafios.html" id="navbarDropdown"
-                    ><b class="BotaoNavMain">Buscar</b></a
-                  >
-                  <div
-                    class="dropdown-menu dropdown-content"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <form style="display: flex">
-                      <input
-                        type="text"
-                        id="busca"
-                        placeholder="Buscar Desafio"
-                      />
-                      <button
-                        onclick="window.localStorage.setItem('busca',document.getElementById('busca').value);"
-                      >
-                        <a href="busca.html">Buscar</a>
-                      </button>
-                    </form>
-                  </div>
-                </li>
+
                 <li class="nav-item">
                   <a
                     class="nav-link js-scroll-trigger"
@@ -228,7 +239,11 @@
         </nav>
         <!-- Desafio -->
         <section class="container" id="desafio" value="0">
-          <h1 id="TituloDesafio" class="TituloPagina"></h1>
+          <div>
+            <hr class="linha" />
+            <h1 id="TituloDesafio" class="TituloPagina"></h1>
+            <hr class="linha" />
+          </div>
           <div class="desafio text-center mt-4">
             <div
               class="row container align-items-center"
