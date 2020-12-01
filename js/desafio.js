@@ -1,10 +1,9 @@
 var Titulos = [
-  'Desafio da pá suja',
-  'Torre colorida de Matilda',
+  'Triângulos numéricos',
   'Palitos coloridos',
-  'Desafio da ilha',
-  'Desafio da escada',
   'Organizando o curral',
+  'Desafio dos cachorros',
+  'Desafio das bandeiras',
 ]
 var Descricoes = [
   'Com quatro palitos e um pedaço de papel faça igual ao modelo mostrado. Tire a sujeira da pá, movendo apenas dois palitos.',
@@ -44,9 +43,9 @@ function AntesProximo(elem, type, random, setIndice) {
   document.getElementById('TituloDesafio').append(texto)
 
   // Troca de texto
-  var texto = document.createTextNode(Descricoes[indice])
-  $('#TextoDesafio').empty()
-  document.getElementById('TextoDesafio').append(texto)
+  // var texto = document.createTextNode(Descricoes[indice])
+  // $('#TextoDesafio').empty()
+  // document.getElementById('TextoDesafio').append(texto)
 
   //Troca de imagem
   var img = new Image()
@@ -60,28 +59,19 @@ function AntesProximo(elem, type, random, setIndice) {
     document
       .getElementById('DivTextoDesafio')
       .setAttribute('class', 'col-lg-12 col-md-12 col-sm-12 mt-4')
-
-    $('a#curral').remove()
   }
 
   img.onload = function () {
-    document
-      .getElementById('DivTextoDesafio')
-      .setAttribute('class', 'col-lg-8 col-md-6 col-sm-12 mt-4')
+    document.getElementById('DivTextoDesafio')
     document.getElementById('ImagemDesafio').setAttribute('src', img.src)
     document
       .getElementById('ImagemDesafio')
       .setAttribute('style', 'display:block')
-    if (indice == 1) {
-      $(
-        '<img id="matilde" class="img-thumbnail" style="width: 500px; height: 250px;" src="./assets/img/Desafios/2.1.png" />',
-      ).insertAfter('p')
-    } else $('img#matilde').remove()
 
-    if (indice == 5) {
+    if (indice == 2) {
       $(
-        '<a id="curral" class="btn btn-primary" href="curral.html" style="background-color: #3298ff; font-size: 20px;">Iniciar desafio</a>',
-      ).insertAfter('p')
+        '<a id="curral" class="btn btn-primary" href="curral.html" style="background-color: #3298ff; font-size: 20px; margin: auto;">Iniciar desafio</a>',
+      ).insertAfter('#ImagemDesafio')
     } else $('a#curral').remove()
   }
   ChecaSetas(indice)
@@ -135,7 +125,6 @@ function ChecaSetas(indice) {
 function inserir_imagens(busca) {
   var i
   var indexs = []
-  var imagens = document.getElementById('imagens')
   var titulo = document.getElementById('titulo')
 
   for (var i = 0; i < Titulos.length; i++) {
@@ -148,29 +137,26 @@ function inserir_imagens(busca) {
   titulo.innerHTML =
     '<h2>Resultados da pesquisa por: ' + '"' + busca + '"' + ' </h2><hr>'
 
+  for (i = 0; i < 9; i++) $('#' + i).hide()
+
   for (i = 0; i < indexs.length; i++) {
     switch (indexs[i]) {
+      case 0:
+        $('#7').show()
+        break
+      case 1:
+        $('#6').show()
+        break
       case 2:
-        imagens.innerHTML =
-          '<div class="col-lg-4 col-md-6 col-sm-12">' +
-          '<a onclick="window.localStorage.setItem("aleatorio","false"); window.localStorage.setItem("indice", 2);" href="./desafio.html">' +
-          '<img class="img-fluid img-thumbnail zoom" src="./assets/img/Vinhetas/palitos.jpg" style="height: 250px; width: 250px"/>' +
-          '</a> </div>'
+        $('#2').show()
+        break
+      case 3:
+        $('#0').show()
         break
       case 4:
-        imagens.innerHTML =
-          '<div class="col-lg-4 col-md-6 col-sm-12">' +
-          '<a onclick="window.localStorage.setItem("aleatorio","false"); window.localStorage.setItem("indice", 4);" href="./desafio.html">' +
-          '<img class="img-fluid img-thumbnail zoom" src="./assets/img/Vinhetas/escada.jpg" style="height: 250px; width: 250px"/>' +
-          '</a> </div>'
+        $('#1').show()
         break
-      case 5:
-        imagens.innerHTML =
-          '<div class="col-lg-4 col-md-6 col-sm-12">' +
-          '<a onclick="window.localStorage.setItem("aleatorio","false"); window.localStorage.setItem("indice", 5);" href="./desafio.html">' +
-          '<img class="img-fluid img-thumbnail zoom" src="./assets/img/Vinhetas/curral.jpg" style="height: 250px; width: 250px"/>' +
-          '</a> </div>'
-
+      default:
         break
     }
   }
