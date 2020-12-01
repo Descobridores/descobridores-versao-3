@@ -45,40 +45,12 @@
 }
 
 .BotaoNavMain {
-  color: #ca6582;
+  color: #ec4326;
   font-size: 18px;
 }
 
-.BotaoNav {
-  margin-top: 1px;
-  margin-bottom: 1px;
-  border: solid 3px #bbdbff;
-  border-radius: 20px;
-}
-
-.BotaoNav:active {
-  border: solid 3px #88c4ff;
-}
-
-.BotaoNav:hover {
-  margin-top: 1px;
-  margin-bottom: 1px;
-  border: solid 3px #88c4ff;
-  background-color: #bbdbff;
-  border-radius: 20px;
-}
-
-.BotaoNavAtual {
-  border: solid 3px #88c4ff;
-  background-color: #bbdbff;
-  border-radius: 20px;
-}
-
-#service_image {
-  width: 124px;
-  height: 124px;
-  border-radius: 50%;
-  border: solid 6px #dfe0e1;
+.BotaoNavMain:hover {
+  text-decoration: underline;
 }
 
 .logo {
