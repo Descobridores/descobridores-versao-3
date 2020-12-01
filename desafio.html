@@ -99,25 +99,18 @@
                   <a
                     class="nav-link js-scroll-trigger"
                     href="./descobridores.html"
-                    style="color: #ec4326; font-size: 18px"
-                    ><b>Descobridores</b></a
                   >
+                    <b class="BotaoNavMain">Descobridores</b>
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a
-                    class="nav-link js-scroll-trigger"
-                    href="./projeto.html"
-                    style="color: #ec4326; font-size: 18px"
-                    ><b>Projeto</b></a
-                  >
+                  <a class="nav-link js-scroll-trigger" href="./projeto.html">
+                    <b class="BotaoNavMain">Projeto</b>
+                  </a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a
-                    class="nav-link"
-                    href="./desafios.html"
-                    style="color: #ec4326; font-size: 18px"
-                    id="navbarDropdown"
-                    ><b>Desafios</b></a
+                  <a class="nav-link" href="./desafios.html" id="navbarDropdown"
+                    ><b class="BotaoNavMain">Desafios</b></a
                   >
                   <div
                     class="dropdown-menu dropdown-content"
@@ -179,44 +172,54 @@
                     >
                   </div>
                 </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="./desafios.html" id="navbarDropdown"
+                    ><b class="BotaoNavMain">Buscar</b></a
+                  >
+                  <div
+                    class="dropdown-menu dropdown-content"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <form style="display: flex">
+                      <input
+                        type="text"
+                        id="busca"
+                        placeholder="Buscar Desafio"
+                      />
+                      <button
+                        onclick="window.localStorage.setItem('busca',document.getElementById('busca').value);"
+                      >
+                        <a href="busca.html">Buscar</a>
+                      </button>
+                    </form>
+                  </div>
+                </li>
                 <li class="nav-item">
                   <a
                     class="nav-link js-scroll-trigger"
                     href="./educadores.html"
-                    style="color: #ec4326; font-size: 18px"
-                    ><b>Educadores</b></a
+                  >
+                    <b class="BotaoNavMain">Educadores</b>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="./videos.html">
+                    <b class="BotaoNavMain">Vídeos</b>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="./fotos.html"
+                    ><b class="BotaoNavMain">Fotos</b></a
                   >
                 </li>
                 <li class="nav-item">
-                  <a
-                    class="nav-link js-scroll-trigger"
-                    href="./videos.html"
-                    style="color: #ec4326; font-size: 18px"
-                    ><b>Vídeos</b></a
+                  <a class="nav-link js-scroll-trigger" href="./contato.html"
+                    ><b class="BotaoNavMain">Contato</b></a
                   >
                 </li>
                 <li class="nav-item">
-                  <a
-                    class="nav-link js-scroll-trigger"
-                    href="./fotos.html"
-                    style="color: #ec4326; font-size: 18px"
-                    ><b>Fotos</b></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link js-scroll-trigger"
-                    href="./contato.html"
-                    style="color: #ec4326; font-size: 18px"
-                    ><b>Contato</b></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link js-scroll-trigger"
-                    href="./links.html"
-                    style="color: #ec4326; font-size: 18px"
-                    ><b>Links</b></a
+                  <a class="nav-link js-scroll-trigger" href="./links.html"
+                    ><b class="BotaoNavMain">Links</b></a
                   >
                 </li>
               </ul>
