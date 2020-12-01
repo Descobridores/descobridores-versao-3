@@ -151,16 +151,23 @@ button:active {
   flex: 1;
 }
 
+.Lupa {
+  width: 30px;
+  height: 30px;
+}
+
 .TituloPagina {
   display: block;
   width: 100%;
-  color: #ffffff;
+  color: #ec4326;
   font-weight: 500;
   font-family: 'Comic Sans MS', cursive, sans-serif;
   text-align: center;
-  border-radius: 10px;
-  line-height: 100px;
-  background-color: #303033;
+  line-height: 75px;
+}
+
+.linha {
+  background: #ec442636;
 }
 
 .Lista {

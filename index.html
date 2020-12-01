@@ -85,6 +85,36 @@
                 class="navbar-nav text-uppercase ml-auto"
                 style="margin-right: auto !important"
               >
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link"
+                    href="./desafios.html"
+                    id="navbarDropdown"
+                  >
+                    <img
+                      class="Lupa"
+                      src="./assets/img/Lupa.png"
+                      alt="Buscar"
+                    />
+                  </a>
+                  <div
+                    class="dropdown-menu dropdown-content"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <form style="display: flex">
+                      <input
+                        type="text"
+                        id="busca"
+                        placeholder="Buscar Desafio"
+                      />
+                      <button
+                        onclick="window.localStorage.setItem('busca',document.getElementById('busca').value);"
+                      >
+                        <a href="busca.html">Buscar</a>
+                      </button>
+                    </form>
+                  </div>
+                </li>
                 <li class="nav-item">
                   <a
                     class="nav-link js-scroll-trigger"
@@ -162,28 +192,7 @@
                     >
                   </div>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link" href="./desafios.html" id="navbarDropdown"
-                    ><b class="BotaoNavMain">Buscar</b></a
-                  >
-                  <div
-                    class="dropdown-menu dropdown-content"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <form style="display: flex">
-                      <input
-                        type="text"
-                        id="busca"
-                        placeholder="Buscar Desafio"
-                      />
-                      <button
-                        onclick="window.localStorage.setItem('busca',document.getElementById('busca').value);"
-                      >
-                        <a href="busca.html">Buscar</a>
-                      </button>
-                    </form>
-                  </div>
-                </li>
+
                 <li class="nav-item">
                   <a
                     class="nav-link js-scroll-trigger"
