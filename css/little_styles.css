@@ -10,9 +10,13 @@
   }
 }
 
-.vinhetas {
+.VinhetasIMG {
   height: 250px;
   width: 250px;
+}
+
+.Vinheta {
+  margin-bottom: 30px;
 }
 
 .dropdown {

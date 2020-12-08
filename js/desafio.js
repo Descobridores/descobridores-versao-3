@@ -130,7 +130,7 @@ function ChecaSetas(indice) {
 
 // LOGICA BUSCA
 function inserir_imagens(busca) {
-  var i
+  var i = 0
   var indexs = []
   var titulo = document.getElementById('titulo')
 
@@ -144,27 +144,9 @@ function inserir_imagens(busca) {
   titulo.innerHTML =
     '<h2>Resultados da pesquisa por: ' + '"' + busca + '"' + ' </h2><hr>'
 
-  for (i = 0; i < 9; i++) $('#' + i).hide()
+  for (i = 0; i <= Tamanho; i++) $('#' + i).hide()
 
-  for (i = 0; i < indexs.length; i++) {
-    switch (indexs[i]) {
-      case 0:
-        $('#7').show()
-        break
-      case 1:
-        $('#6').show()
-        break
-      case 2:
-        $('#2').show()
-        break
-      case 3:
-        $('#0').show()
-        break
-      case 4:
-        $('#1').show()
-        break
-      default:
-        break
-    }
+  for (i = 0; indexs[i] !== undefined; i++) {
+    $(`#${indexs[i]}`).show()
   }
 }
