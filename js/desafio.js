@@ -133,10 +133,11 @@ function inserir_imagens(busca) {
   var i = 0
   var indexs = []
   var titulo = document.getElementById('titulo')
+  var buscaSimplificada = busca.toLowerCase().normalize('NFD')
 
   for (var i = 0; i < Titulos.length; i++) {
     // converte strings para letras minusculas
-    if (Titulos[i].toLowerCase().includes(busca.toLowerCase())) {
+    if (Titulos[i].toLowerCase().normalize('NFD').includes(buscaSimplificada)) {
       indexs.push(i)
     }
   }
