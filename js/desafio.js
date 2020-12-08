@@ -129,15 +129,40 @@ function ChecaSetas(indice) {
 }
 
 // LOGICA BUSCA
+
+function retiraAcentos(str) {
+  com_acento =
+    'ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝŔÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿŕ'
+
+  sem_acento =
+    'AAAAAAACEEEEIIIIDNOOOOOOUUUUYRsBaaaaaaaceeeeiiiionoooooouuuuybyr'
+  novastr = ''
+  for (i = 0; i < str.length; i++) {
+    troca = false
+    for (a = 0; a < com_acento.length; a++) {
+      if (str.substr(i, 1) == com_acento.substr(a, 1)) {
+        novastr += sem_acento.substr(a, 1)
+        troca = true
+        break
+      }
+    }
+    if (troca == false) {
+      novastr += str.substr(i, 1)
+    }
+  }
+  return novastr
+}
+
 function inserir_imagens(busca) {
   var i = 0
   var indexs = []
   var titulo = document.getElementById('titulo')
-  var buscaSimplificada = busca.toLowerCase().normalize('NFD')
+  var buscaSimplificada = retiraAcentos(busca.toLowerCase())
 
+  // converte strings para letras minusculas sem acento
   for (var i = 0; i < Titulos.length; i++) {
-    // converte strings para letras minusculas
-    if (Titulos[i].toLowerCase().normalize('NFD').includes(buscaSimplificada)) {
+    var tituloTemp = retiraAcentos(Titulos[i].toLowerCase())
+    if (tituloTemp.includes(buscaSimplificada)) {
       indexs.push(i)
     }
   }
