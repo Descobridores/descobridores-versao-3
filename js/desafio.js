@@ -1,17 +1,24 @@
 var Titulos = [
-  'Triângulos numéricos',
-  'Palitos coloridos',
-  'Organizando o curral',
   'Desafio dos cachorros',
   'Desafio das bandeiras',
-]
-var Descricoes = [
-  'Com quatro palitos e um pedaço de papel faça igual ao modelo mostrado. Tire a sujeira da pá, movendo apenas dois palitos.',
-  'Matilda tem 4 quadrados marrons, 3 quadrados roxos, 2 quadrados laranjas e 1 quadrado verde. Ela quer construir uma torre, de acordo com a figura, que respeite a seguinte regra: "Dois quadrados da mesma cor não podem se tocar"',
-  'Na figura ao lado usamos 9 palitos para construí-la. Os palitos podem ser pintados de azul, verde ou vermelho, desde que cada triângulo tenha seus lados com três cores diferentes. Alguns palitos já foram pintados, como mostra a figura. Qual cor pode ser usada para pintar o palito indicado com o X?',
-  'Na figura vemos uma ilha com uma costa muito recortada e alguns sapos. Quantos desses sapos estão na ilha?',
-  'Uma pessoa se encontra no degrau na metade de uma escada. Sobe 5 degraus, desce 7, volta a subir 4 e depois mais 9 para chegar no último degrau. Quantos degraus a escada tem?',
-  'Um fazendeiro possui 3 cavalos, 3 porcos e 3 vacas. Em sua fazenda, há um curral dividido em 9 partes, dispostas em 3 fileiras de 3. O fazendeiro já colocou um porco e um cavalo. Agora, ele quer que você preencha as partes vazias, de modo que cada uma seja ocupada somente por um animal, e em cada fileira haja um animal de cada tipo.',
+  'Organizando o curral',
+  '',
+  '',
+  '',
+  'Triângulos numéricos',
+  'Palitos coloridos',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
 ]
 var Tamanho = Titulos.length - 1
 
@@ -68,7 +75,7 @@ function AntesProximo(elem, type, random, setIndice) {
       .getElementById('ImagemDesafio')
       .setAttribute('style', 'display:block')
 
-    if (indice == 2) {
+    if (indice == 3) {
       $(
         '<a id="curral" class="btn btn-primary" href="curral.html" style="background-color: #3298ff; font-size: 20px; margin: auto;">Iniciar desafio</a>',
       ).insertAfter('#ImagemDesafio')
