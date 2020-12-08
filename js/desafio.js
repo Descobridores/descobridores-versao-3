@@ -75,9 +75,9 @@ function AntesProximo(elem, type, random, setIndice) {
       .getElementById('ImagemDesafio')
       .setAttribute('style', 'display:block')
 
-    if (indice == 3) {
+    if (indice == 2) {
       $(
-        '<a id="curral" class="btn btn-primary" href="curral.html" style="background-color: #3298ff; font-size: 20px; margin: auto;">Iniciar desafio</a>',
+        '<a id="curral" class="btn btn-primary" href="curral.html" style="background-color: #3298ff; font-size: 20px; margin: auto; margin-top:10px;">Iniciar desafio</a>',
       ).insertAfter('#ImagemDesafio')
     } else $('a#curral').remove()
   }
