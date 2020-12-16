@@ -137,6 +137,10 @@ button:active {
   outline: none;
 }
 
+.AntesProximo {
+  margin: 20px;
+}
+
 .AntesProximo button {
   height: 50px;
   margin-top: 10px;

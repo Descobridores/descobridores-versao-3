@@ -5,8 +5,8 @@ var Titulos = [
   '',
   '',
   '',
-  'Triângulos numéricos',
   'Palitos coloridos',
+  'Triângulos numéricos',
   '',
   '',
   '',
@@ -58,28 +58,23 @@ function AntesProximo(elem, type, random, setIndice) {
   var img = new Image()
   img.src = './assets/img/Desafios/' + indice + '.png'
 
+  if (indice == 2) {
+    $(
+      '<a id="curral" class="btn btn-primary" href="curral.html" style="background-color: #3298ff; font-size: 20px; margin: auto; margin-top:20px;">Iniciar desafio</a>',
+    ).insertAfter('#ImagemDesafio')
+  } else $('a#curral').remove()
+
   img.onerror = function () {
     document
       .getElementById('ImagemDesafio')
       .setAttribute('style', 'display:none')
-
-    document
-      .getElementById('DivTextoDesafio')
-      .setAttribute('class', 'col-lg-12 col-md-12 col-sm-12 mt-4')
   }
 
   img.onload = function () {
-    document.getElementById('DivTextoDesafio')
     document.getElementById('ImagemDesafio').setAttribute('src', img.src)
     document
       .getElementById('ImagemDesafio')
       .setAttribute('style', 'display:block')
-
-    if (indice == 2) {
-      $(
-        '<a id="curral" class="btn btn-primary" href="curral.html" style="background-color: #3298ff; font-size: 20px; margin: auto; margin-top:10px;">Iniciar desafio</a>',
-      ).insertAfter('#ImagemDesafio')
-    } else $('a#curral').remove()
   }
   ChecaSetas(indice)
 }
