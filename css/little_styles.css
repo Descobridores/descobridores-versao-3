@@ -67,6 +67,9 @@
   display: none;
   z-index: 100;
 }
+.child a:hover {
+  background-color: rgb(238, 238, 238);
+}
 .child li {
   /* background-color: #e4eff7;
   line-height: 30px;
@@ -99,14 +102,6 @@ ul ul ul {
   float: right;
   margin-right: 5px;
 }
-
-/* #janela {
-  height: 500px;
-  width: 860px;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
-} */
 
 .janela_palestrante {
   position: relative;
