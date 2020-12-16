@@ -87,10 +87,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul
+                id="menu"
                 class="navbar-nav text-uppercase ml-auto"
                 style="margin-right: auto !important"
               >
-                <li class="nav-item dropdown">
+                <li class="parent nav-item dropdown">
                   <a
                     class="nav-link"
                     href="./desafios.html"
@@ -102,126 +103,169 @@
                       alt="Buscar"
                     />
                   </a>
-                  <div
-                    class="dropdown-menu dropdown-content"
-                    aria-labelledby="navbarDropdown"
+                  <ul class="child">
+                    <li>
+                      <form style="display: flex">
+                        <input
+                          type="text"
+                          id="busca"
+                          placeholder="Buscar Desafio"
+                        />
+                        <button
+                          onclick="window.localStorage.setItem('busca',document.getElementById('busca').value);"
+                        >
+                          <a href="busca.html">Buscar</a>
+                        </button>
+                      </form>
+                    </li>
+                  </ul>
+                </li>
+                <li class="parent nav-item dropdown">
+                  <a class="nav-link" href="#"
+                    ><b class="BotaoNavMain">Descobridores</b></a
                   >
-                    <form style="display: flex">
-                      <input
-                        type="text"
-                        id="busca"
-                        placeholder="Buscar Desafio"
-                      />
-                      <button
-                        onclick="window.localStorage.setItem('busca',document.getElementById('busca').value);"
+                  <ul class="child">
+                    <li><a class="dropdown-item" href="#">O que é</a></li>
+                    <li class="parent">
+                      <a class="dropdown-item" href="./quem.html"
+                        >Quem somos<span class="expand">»</span></a
                       >
-                        <a href="busca.html">Buscar</a>
-                      </button>
-                    </form>
-                  </div>
+                      <ul class="child">
+                        <li>
+                          <a class="dropdown-item" href="#" nowrap
+                            >Coordenadores</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#" nowrap
+                            >Professores</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#" nowrap>Monitores</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Nossas Ações</a></li>
+                    <li><a class="dropdown-item" href="#">Implementação</a></li>
+                  </ul>
                 </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link js-scroll-trigger"
-                    href="./descobridores.html"
-                  >
-                    <b class="BotaoNavMain">Descobridores</b>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="./projeto.html">
-                    <b class="BotaoNavMain">Projeto</b>
-                  </a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link" href="./desafios.html" id="navbarDropdown"
+                <li class="parent nav-item">
+                  <a class="nav-link" href="#" id="navbarDropdown"
                     ><b class="BotaoNavMain">Desafios</b></a
                   >
-                  <div
-                    class="dropdown-menu dropdown-content"
-                    aria-labelledby="navbarDropdown"
+                  <ul class="child">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 4);"
+                        href="#"
+                        >Desafio da escada</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 1);"
+                        href="./desafio.html"
+                        >Desafio das bandeiras</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 8);"
+                        href="#"
+                        >Desafio das varetas</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 0);"
+                        href="./desafio.html"
+                        >Desafio dos cachorros</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 5);"
+                        href="#"
+                        >Flores no jardim</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 3);"
+                        href="#"
+                        >Gincana das altuas</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 2);"
+                        href="./desafio.html"
+                        >Organizando o curral</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 6);"
+                        href="./desafio.html"
+                        >Palitos coloridos</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 7);"
+                        href="./desafio.html"
+                        >Triangulos numéricos</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="parent nav-item">
+                  <a class="nav-link" href="./desafios.html"
+                    ><b class="BotaoNavMain">Educadores</b></a
                   >
-                    <a
-                      class="dropdown-item"
-                      onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 0);"
-                      href="./desafio.html"
-                      >1 - Desafio dos cachorros</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 1);"
-                      href="./desafio.html"
-                      >2 - Desafio das bandeiras</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 2);"
-                      href="./desafio.html"
-                      >3 - Organizando o curral</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 3);"
-                      href="#"
-                      >4 - Gincana das altuas</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 4);"
-                      href="#"
-                      >5 - Desafio da escada</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 5);"
-                      href="#"
-                      >6 - Flores no jardim</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 6);"
-                      href="./desafio.html"
-                      >7 - Palitos coloridos</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 7);"
-                      href="./desafio.html"
-                      >8 - Triangulos numéricos</a
-                    >
-                    <a
-                      class="dropdown-item"
-                      onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 8);"
-                      href="#"
-                      >9 - Desafio das varetas</a
-                    >
-                  </div>
+                  <ul class="child">
+                    <li>
+                      <a class="dropdown-item" href="./videos.html"
+                        >Implementação</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./fotos.html"
+                        >Explicações iniciais para as análises</a
+                      >
+                    </li>
+                  </ul>
                 </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link js-scroll-trigger"
-                    href="./educadores.html"
+                <li class="parent nav-item">
+                  <a class="nav-link" href="./desafios.html"
+                    ><b class="BotaoNavMain">Mídia</b></a
                   >
-                    <b class="BotaoNavMain">Educadores</b>
-                  </a>
+                  <ul class="child">
+                    <li>
+                      <a class="dropdown-item" href="./videos.html">Vídeos</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./fotos.html">Fotos</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="./videos.html">
-                    <b class="BotaoNavMain">Vídeos</b>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="./fotos.html"
-                    ><b class="BotaoNavMain">Fotos</b></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="./contato.html"
+                <li class="parent nav-item">
+                  <a class="nav-link" href="./contato.html"
                     ><b class="BotaoNavMain">Contato</b></a
                   >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="./links.html"
+                <li class="parent nav-item">
+                  <a class="nav-link" href="./links.html"
                     ><b class="BotaoNavMain">Links</b></a
                   >
                 </li>
