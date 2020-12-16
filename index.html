@@ -39,7 +39,45 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="page-top">
+    <div
+      id="PopUp"
+      class="modal"
+      tabindex="-1"
+      role="dialog"
+      style="display: none"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Bem Vindo aos Descobridores da Matemática
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Fechar"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Texto do corpo do modal, é aqui.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+              onclick="document.getElementById('PopUp').remove()"
+            >
+              Vamos lá
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="wrapper">
       <main>
         <!-- Masthead-->
@@ -414,6 +452,7 @@
     </div>
     <!-- Footer-->
     <script src="./js/desafio.js"></script>
+    <script src="./js/popUp.js"></script>
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
