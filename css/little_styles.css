@@ -89,7 +89,10 @@ ul ul ul {
   float: right;
   margin-right: 5px;
 }
-
+.palestrante {
+  width: 256px;
+  height: 256px;
+}
 .janela_palestrante {
   position: relative;
   float: left;
@@ -157,7 +160,7 @@ p {
 }
 
 .logo {
-  height: 70px;
+  height: 100px;
   margin-bottom: 10px;
 }
 
