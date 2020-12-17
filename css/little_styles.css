@@ -51,7 +51,6 @@
   display: block;
   position: relative;
   float: left;
-  /* line-height: 30px; */
 }
 .parent a {
   color: black;
@@ -67,16 +66,12 @@
   display: none;
   z-index: 100;
 }
+.child a:hover {
+  background-color: rgb(238, 238, 238);
+}
 .child li {
-  /* background-color: #e4eff7;
-  line-height: 30px;
-  border-bottom: #ccc 1px solid;
-  border-right: #ccc 1px solid; */
   width: 100%;
 }
-/* .child li a {
-  color: #000000;
-} */
 ul {
   list-style: none;
   margin: 0;
@@ -88,26 +83,16 @@ ul ul ul {
   top: 0;
   margin-left: 1px;
 }
-/* li:hover {
-  background-color: #95b4ca;
-}
-.parent li:hover {
-  background-color: #f0f0f0;
-} */
+
 .expand {
   font-size: 12px;
   float: right;
   margin-right: 5px;
 }
-
-#janela {
-  height: 500px;
-  width: 860px;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
+.palestrante {
+  width: 256px;
+  height: 256px;
 }
-
 .janela_palestrante {
   position: relative;
   float: left;
@@ -116,7 +101,6 @@ ul ul ul {
   border: solid 5px #fff;
   background-color: #1a1a1a;
   margin: 0 20px 50px 0;
-  box-shadow: 2px 2px 2px #333;
 }
 
 .janela_foto {
@@ -126,7 +110,7 @@ ul ul ul {
   width: 256px;
   height: 256px;
   z-index: 1;
-  clip: rect(0 256px 256px 0);
+  clip: rect(0 256px 250px 0);
 }
 
 .janela_texto {
@@ -135,17 +119,16 @@ ul ul ul {
   left: 0;
   width: 256px;
   height: 256px;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 2;
   padding: 5px;
-  opacity: 0.7;
   cursor: pointer;
 
   transition: all 0.5s ease-out;
 }
 
 .janela_texto:hover {
-  top: 100px;
+  top: 80px;
 }
 
 h3 {
@@ -177,7 +160,7 @@ p {
 }
 
 .logo {
-  height: 70px;
+  height: 100px;
   margin-bottom: 10px;
 }
 

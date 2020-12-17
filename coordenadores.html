@@ -40,47 +40,6 @@
     />
   </head>
   <body id="page-top">
-    <div
-      id="PopUp"
-      class="modal"
-      tabindex="-1"
-      role="dialog"
-      style="display: none"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">
-              Bem Vindo aos Descobridores da Matemática
-            </h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Fechar"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p style="color: black">
-              Olá, seja bem vindo ao novo e inovador site dos Descobridores,
-              aqui você encontrara os melhores e mais divertidos desafios
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-              onclick="document.getElementById('PopUp').remove()"
-            >
-              Vamos lá
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="wrapper">
       <main>
         <!-- Masthead-->
@@ -163,22 +122,33 @@
                   <ul class="child">
                     <li><a class="dropdown-item" href="#">O que é</a></li>
                     <li class="parent">
-                      <a class="dropdown-item" href="./quem.html"
+                      <a class="dropdown-item" href="#"
                         >Quem somos<span class="expand">»</span></a
                       >
                       <ul class="child">
                         <li>
-                          <a class="dropdown-item" href="#" nowrap
+                          <a
+                            class="dropdown-item"
+                            href="./coordenadores.html"
+                            nowrap
                             >Coordenadores</a
                           >
                         </li>
                         <li>
-                          <a class="dropdown-item" href="#" nowrap
+                          <a
+                            class="dropdown-item"
+                            href="./professores.html"
+                            nowrap
                             >Professores</a
                           >
                         </li>
                         <li>
-                          <a class="dropdown-item" href="#" nowrap>Monitores</a>
+                          <a
+                            class="dropdown-item"
+                            href="./monitores.html"
+                            nowrap
+                            >Monitores</a
+                          >
                         </li>
                       </ul>
                     </li>
@@ -271,12 +241,10 @@
                   >
                   <ul class="child">
                     <li>
-                      <a class="dropdown-item" href="./videos.html"
-                        >Implementação</a
-                      >
+                      <a class="dropdown-item" href="#">Implementação</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="./fotos.html"
+                      <a class="dropdown-item" href="#"
                         >Explicações iniciais para as análises</a
                       >
                     </li>
@@ -312,55 +280,72 @@
         <!-- Pagina -->
         <section class="container">
           <hr class="linha" />
-          <h1 class="TituloPagina">Quem somos</h1>
+          <h1 class="TituloPagina">Coordenadores</h1>
           <hr class="linha" />
-          <div id="janela">
-            <div class="janela_palestrante">
-              <div class="janela_foto">
-                <img src="./assets/img/personagem1.jpg" alt="personagem 1" />
+          <div class="row container" id="janela">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="janela_palestrante">
+                <div class="janela_foto">
+                  <img
+                    class="palestrante img-fluid"
+                    src="./assets/img/Seme.jpg"
+                    alt="personagem 1"
+                  />
 
-                <div class="janela_texto">
-                  <h3>William Lemos</h3>
-                  <p>
-                    Mestre em Gastronomia pela Faculdade UFRS com a
-                    especialidade em carnes. Lidera equipe do Tomo 1 na
-                    Argentina.
-                    <br />
-                    <span class="azul">@williamimedia</span>
-                  </p>
+                  <div class="janela_texto">
+                    <h3>Seme Gebara Neto</h3>
+                    <p>
+                      Doutor em Matemática pela Universidade Federal de Minas
+                      Gerais. Coordenador do projeto Descobridores da Matemática
+                      <br />
+                      <span class="azul"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="janela_palestrante">
+                <div class="janela_foto">
+                  <img
+                    class="palestrante img-fluid"
+                    src="./assets/img/Tania.jpg"
+                    alt="personagem 2"
+                  />
+
+                  <div class="janela_texto">
+                    <h3>Tânia Aretuza Ambrizi Gebara</h3>
+                    <p>
+                      Doutora em Educação pela Universidade Federal de Minas
+                      Gerais. É coordenadora e uma das fundadoras do Projeto
+                      Ciclo Permanente de Estudos e Debates sobre Educação
+                      Básica <br />
+                      <span class="azul"></span>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="janela_palestrante">
-              <div class="janela_foto">
-                <img src="./assets/img/personagem2.jpg" alt="personagem 2" />
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="janela_palestrante">
+                <div class="janela_foto">
+                  <img
+                    class="palestrante img-fluid"
+                    src="./assets/img/Brian.jpg"
+                    alt="personagem 3"
+                  />
 
-                <div class="janela_texto">
-                  <h3>Patricia Souza</h3>
-                  <p>
-                    &Eacute;&nbsp;coordenadora dos cursos de
-                    p&oacute;s-gradua&ccedil;&atilde;o em Gastronomia de
-                    Sourbone - Paris e chefe do Hippopotamus.
-                    <br />
-                    <span class="azul">@patriciaimedia</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="janela_palestrante">
-              <div class="janela_foto">
-                <img src="./assets/img/personagem3.jpg" alt="personagem 3" />
-
-                <div class="janela_texto">
-                  <h3>Tiago Henrique</h3>
-                  <p>
-                    Barista de renome, coordena o curso de intinerante em todo
-                    Brasil. Mestre em Gastronomia pela USP e Doutor em Harvard.
-                    <br />
-                    <span class="azul">@tiagoimedia</span>
-                  </p>
+                  <div class="janela_texto">
+                    <h3>Brian Diniz Amorim</h3>
+                    <p>
+                      Graduado em Matemática pela Universidade Federal de Minas
+                      Gerais e Mestre em Educação pela Faculdade de Educação da
+                      Universidade Federal de Minas Gerais. Participa do grupo
+                      História Oral e Educação Matemática (GHOEM) <br />
+                      <span class="azul"></span>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -382,7 +367,8 @@
               <a href="http://www.cp.ufmg.br/">
                 <img
                   class="logo img-thumbnail"
-                  src="assets/img/Logos/cp.jpeg"
+                  style="width: 400px"
+                  src="assets/img/Logos/cp.png"
                 />
               </a>
             </div>
