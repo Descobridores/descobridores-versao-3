@@ -80,7 +80,7 @@ function insert_images() {
   var inner = ''
   var images = document.getElementById('fotos')
 
-  for (var i = 0; i < 21; i++) {
+  for (var i = 0; i < 24; i++) {
     if (i % 3 == 0) inner += '<div class = "row">'
 
     inner +=
