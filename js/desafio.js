@@ -121,7 +121,7 @@ function AntesProximo(elem, type, random, setIndice) {
     img2.onload = function () {
       document.getElementById('IlustracaoDesafio').setAttribute('src', img2.src)
       document.getElementById('IlustracaoDesafio').style.cssText =
-        'display:block; height: 290px; width: 290px;'
+        'display:block; height: 360px; width: 360px;'
     }
     $('#IlustracaoDesafio').show()
   } else {
