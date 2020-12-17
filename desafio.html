@@ -346,6 +346,7 @@
                 class="img-thumbnail mt-3"
                 id="ImagemDesafio"
                 alt="Desafio"
+                onclick="maximize_images(this)"
                 style="display: block"
               />
             </div>
@@ -385,6 +386,11 @@
             >
               <img src="./assets/img/Proximo.png" alt="Proximo" />
             </button>
+          </div>
+          <div id="myModal" class="modal">
+            <span id="fechar" class="close">&times;</span>
+            <img class="modal-content" id="img01" />
+            <div id="caption"></div>
           </div>
         </section>
       </main>

@@ -59,7 +59,8 @@ function maximize_images(index) {
   var modal = document.getElementById('myModal')
 
   // Get the image and insert it inside the modal - use its "alt" text as a caption
-  var img = document.getElementById('foto' + index)
+  var img = document.getElementById(index.id)
+  console.log(index.id)
   var modalImg = document.getElementById('img01')
   var captionText = document.getElementById('caption')
   modal.style.display = 'block'
@@ -86,9 +87,7 @@ function insert_images() {
       '<div class="col-lg-4 col-md-6 col-sm-12">' +
       '<img id="foto' +
       i +
-      '" class="img-thumbnail myImg" onclick="maximize_images(' +
-      i +
-      ')" style="width: 400px; height: 300px;" src="./assets/img/Criancas/' +
+      '" class="img-thumbnail myImg" onclick="maximize_images(this)" style="width: 400px; height: 300px;" src="./assets/img/Criancas/' +
       i +
       '.jpg"/>' +
       '</div>'
