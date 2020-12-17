@@ -47,6 +47,20 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.sub-menu-columns li {
+  display: inline-block;
+  /* float: left; */
+  width: 200px;
+}
+.sub-menu-columns li:nth-child(odd) {
+  float: left;
+  margin-right: 10px;
+}
+.sub-menu-columns li:nth-child(even) {
+  float: right;
+}
+
 .parent {
   display: block;
   position: relative;
