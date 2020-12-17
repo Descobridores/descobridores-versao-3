@@ -100,6 +100,19 @@
           <div class="row">
             <div class="col-lg-2 col-md-2 col-sm-2">
               <!-- IMAGEM DA LOGO -->
+              <img
+                src="./assets/img/Logos/descobridores.png"
+                style="
+                  max-height: 200px;
+                  max-width: 200px;
+                  position: absolute;
+                  top: 0;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  margin: auto;
+                "
+              />
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 my-auto">
               <h1 class="text-uppercase">
@@ -333,38 +346,73 @@
             <h1 id="TituloDesafio" class="TituloPagina"></h1>
             <hr class="linha" />
           </div>
-          <div class="desafio text-center mt-4">
-            <div
-              class="row container align-items-center"
-              style="margin-right: 0; margin-left: 0"
-            >
-              <div id="DivTextoDesafio">
-                <p id="TextoDesafio" style="text-align: justify !important"></p>
-              </div>
-              <img
-                src=""
-                class="img-thumbnail mt-3"
-                id="ImagemDesafio"
-                alt="Desafio"
-                onclick="maximize_images(this)"
-                style="display: block"
-              />
+          <div class="container row desafio text-center mt-4">
+            <div class="col-lg-4 col-md-4 col-sm-12 align-items-center column">
+              <section
+                class="hall text-light pt-3"
+                style="background-color: #b6b6b6"
+              >
+                <h2 style="color: rgb(53, 53, 53)">Instruções</h2>
+                <button
+                  style="
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-top: 10px;
+                    height: 50px;
+                    width: 200px;
+                    font-size: 17px;
+                  "
+                  onclick=""
+                >
+                  Análise (Nome Temp)</button
+                ><br />
+                <button
+                  style="
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-top: 10px;
+                    height: 50px;
+                    width: 200px;
+                    font-size: 17px;
+                  "
+                  onclick="download('https\:\/\/zootecnia.alegre.ufes.br/sites/zootecnia.alegre.ufes.br/files/field/file/livro_animais_silvestres_-_vida_e_manejo_iii_extincao_3.pdf', 'PDF Pais' )"
+                >
+                  PDF Pais (Nome Temp)</button
+                ><br /><br /><br /><br />
+              </section>
             </div>
-            <div class="align-items-center column">
-              <button
-                class="col-lg-2 col-md-3 col-4"
-                style="margin-right: auto; margin-left: auto; margin-top: 10px"
-                onclick=""
+            <div id="instruções" class="col-lg-8 col-md-8 col-sm-12">
+              <div
+                class="row container align-items-center"
+                style="margin-right: 0; margin-left: 0"
               >
-                Análise (Nome Temp)
-              </button>
-              <button
-                class="col-lg-2 col-md-3 col-4"
-                style="margin-right: auto; margin-left: auto; margin-top: 10px"
-                onclick="download('https\:\/\/zootecnia.alegre.ufes.br/sites/zootecnia.alegre.ufes.br/files/field/file/livro_animais_silvestres_-_vida_e_manejo_iii_extincao_3.pdf', 'PDF Pais' )"
-              >
-                PDF Pais (Nome Temp)
-              </button>
+                <div id="DivTextoDesafio">
+                  <p
+                    id="TextoDesafio"
+                    style="
+                      color: black;
+                      text-align: justify !important;
+                      font-size: 20px;
+                    "
+                  ></p>
+                </div>
+                <img
+                  src=""
+                  class="img-thumbnail mt-3 col-lg-6 col-md-8 col-sm-12"
+                  id="IlustracaoDesafio"
+                  alt="Desafio"
+                  onclick="maximize_images(this)"
+                  style="display: block"
+                />
+                <img
+                  src=""
+                  class="img-thumbnail mt-3 col-lg-6 col-md-8 col-sm-12"
+                  id="ImagemDesafio"
+                  alt="Desafio"
+                  onclick="maximize_images(this)"
+                  style="display: block"
+                />
+              </div>
             </div>
           </div>
           <div class="AntesProximo align-items-center row">

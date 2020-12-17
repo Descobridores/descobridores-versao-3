@@ -20,6 +20,28 @@ var Titulos = [
   '',
   '',
 ]
+var Descricoes = [
+  '',
+  '',
+  'Um fazendeiro possui 3 cavalos, 3 porcos e 3 vacas. Em sua fazenda, há um curral dividido em 9 partes, dispostas em 3 fileiras de 3. O fazendeiro já colocou um porco e um cavalo. Agora, ele quer que você preencha as partes vazias, de modo que cada uma seja ocupada somente por um animal, e em cada fileira haja um animal de cada tipo.',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+]
 var Tamanho = Titulos.length - 1
 
 function download(uri, nome) {
@@ -57,13 +79,18 @@ function AntesProximo(elem, type, random, setIndice) {
   document.getElementById('TituloDesafio').append(texto)
 
   // Troca de texto
-  // var texto = document.createTextNode(Descricoes[indice])
-  // $('#TextoDesafio').empty()
-  // document.getElementById('TextoDesafio').append(texto)
+  var texto = document.createTextNode(Descricoes[indice])
+  $('#TextoDesafio').empty()
+  document.getElementById('TextoDesafio').append(texto)
 
   //Troca de imagem
-  var img = new Image()
-  img.src = './assets/img/Desafios/' + indice + '.png'
+  var img1 = new Image()
+  img1.src = './assets/img/Desafios/' + indice + '.png'
+  // Para testar texto e imagem separados no desafio do curral
+  if (indice == 2) {
+    var img2 = new Image()
+    img2.src = './assets/img/Desafios/' + indice + '-1.png'
+  }
 
   if (indice == 2) {
     $(
@@ -71,17 +98,34 @@ function AntesProximo(elem, type, random, setIndice) {
     ).insertAfter('#ImagemDesafio')
   } else $('a#curral').remove()
 
-  img.onerror = function () {
+  img1.onerror = function () {
     document
       .getElementById('ImagemDesafio')
       .setAttribute('style', 'display:none')
   }
 
-  img.onload = function () {
-    document.getElementById('ImagemDesafio').setAttribute('src', img.src)
+  img1.onload = function () {
+    document.getElementById('ImagemDesafio').setAttribute('src', img1.src)
     document
       .getElementById('ImagemDesafio')
       .setAttribute('style', 'display:block')
+  }
+
+  if (indice == 2) {
+    img2.onerror = function () {
+      document
+        .getElementById('IlustracaoDesafio')
+        .setAttribute('style', 'display:none')
+    }
+
+    img2.onload = function () {
+      document.getElementById('IlustracaoDesafio').setAttribute('src', img2.src)
+      document.getElementById('IlustracaoDesafio').style.cssText =
+        'display:block; height: 290px; width: 290px;'
+    }
+    $('#IlustracaoDesafio').show()
+  } else {
+    $('#IlustracaoDesafio').hide()
   }
   ChecaSetas(indice)
 }
