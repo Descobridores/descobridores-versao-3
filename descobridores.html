@@ -40,6 +40,47 @@
     />
   </head>
   <body id="page-top">
+    <div
+      id="PopUp"
+      class="modal"
+      tabindex="-1"
+      role="dialog"
+      style="display: none"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Bem Vindo aos Descobridores da Matemática
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Fechar"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p style="color: black">
+              Olá, seja bem vindo ao novo e inovador site dos Descobridores,
+              aqui você encontrara os melhores e mais divertidos desafios
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+              onclick="document.getElementById('PopUp').remove()"
+            >
+              Vamos lá
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="wrapper">
       <main>
         <!-- Masthead-->
