@@ -21,7 +21,7 @@ var Titulos = [
   'Triângulos Numéricos',
 ]
 var Descricoes = [
-  '',
+  'Podem jogar dois ou mais jogadores. Nesse desafio, a cada jogada, são lançados dois dados ao mesmo tempo e os números de suas faces são somados. O que vale é o resultado da soma. Quais são os possíveis resultados dessas somas? Agora vamos apostar! Cada descobridor escolhe um dos possíveis resultados das somas para apostar. Um sorteio define a ordem dos jogadores. O primeiro a jogar lança o par de dados e anota o resultado da soma num papel. O próximo jogador também joga o par de dados e anota o resultado no mesmo papel, e assim por diante. O jogo termina quando cada um jogar o par de dados 20 vezes. Ganha quem apostou no resultado que foi anotado mais vezes no papel. Todas as apostas têm a mesma chance de ganhar? Por quê?',
   '',
   '',
   '',
@@ -87,10 +87,8 @@ function AntesProximo(elem, type, random, setIndice) {
   var img1 = new Image()
   img1.src = './assets/img/Desafios/' + indice + '.png'
   // Para testar texto e imagem separados no desafio do curral
-  if (indice == 12) {
-    var img2 = new Image()
-    img2.src = './assets/img/Desafios/' + indice + '-1.png'
-  }
+  var img2 = new Image()
+  img2.src = './assets/img/Desafios/' + indice + '-1.png'
 
   if (indice == 12) {
     $(
@@ -106,26 +104,20 @@ function AntesProximo(elem, type, random, setIndice) {
 
   img1.onload = function () {
     document.getElementById('ImagemDesafio').setAttribute('src', img1.src)
-    document
-      .getElementById('ImagemDesafio')
-      .setAttribute('style', 'display:block')
+    document.getElementById('ImagemDesafio').style.cssText =
+      'height: 380px; width: 380px;'
   }
 
-  if (indice == 12) {
-    img2.onerror = function () {
-      document
-        .getElementById('IlustracaoDesafio')
-        .setAttribute('style', 'display:none')
-    }
+  img2.onerror = function () {
+    document
+      .getElementById('IlustracaoDesafio')
+      .setAttribute('style', 'display:none')
+  }
 
-    img2.onload = function () {
-      document.getElementById('IlustracaoDesafio').setAttribute('src', img2.src)
-      document.getElementById('IlustracaoDesafio').style.cssText =
-        'display:block; height: 360px; width: 360px;'
-    }
-    $('#IlustracaoDesafio').show()
-  } else {
-    $('#IlustracaoDesafio').hide()
+  img2.onload = function () {
+    document.getElementById('IlustracaoDesafio').setAttribute('src', img2.src)
+    document.getElementById('IlustracaoDesafio').style.cssText =
+      'height: 380px; width: 380px;'
   }
   ChecaSetas(indice)
 }
