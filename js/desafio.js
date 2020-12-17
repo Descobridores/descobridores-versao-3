@@ -1,39 +1,39 @@
 var Titulos = [
-  'Desafio dos cachorros',
-  'Desafio das bandeiras',
-  'Organizando o curral',
-  '',
-  '',
-  '',
-  'Triângulos numéricos',
-  'Palitos coloridos',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
+  'Aposte na Soma',
+  'Construindo Pipas',
+  'Desafio da Escada',
+  'Desafio da Ilha',
+  'Desafio da Pá Suja',
+  'Desafio das Bandeiras',
+  'Desafio das Varetas',
+  'Desafio do Dragão',
+  'Flores no Jardim',
+  'Gincana das Alturas',
+  'Milu e Nala',
+  'Monstros na Roda',
+  'Organizando o Curral',
+  'Palitos Coloridos',
+  'Quantos Retângulos?',
+  'Sequência de Triângulos',
+  'Torre da Matilda',
+  'Triângulos Amigos',
+  'Triângulos no Pentágono',
+  'Triângulos Numéricos',
 ]
 var Descricoes = [
   '',
   '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
+  '',
   'Um fazendeiro possui 3 cavalos, 3 porcos e 3 vacas. Em sua fazenda, há um curral dividido em 9 partes, dispostas em 3 fileiras de 3. O fazendeiro já colocou um porco e um cavalo. Agora, ele quer que você preencha as partes vazias, de modo que cada uma seja ocupada somente por um animal, e em cada fileira haja um animal de cada tipo.',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
-  '',
   '',
   '',
   '',
@@ -87,12 +87,12 @@ function AntesProximo(elem, type, random, setIndice) {
   var img1 = new Image()
   img1.src = './assets/img/Desafios/' + indice + '.png'
   // Para testar texto e imagem separados no desafio do curral
-  if (indice == 2) {
+  if (indice == 12) {
     var img2 = new Image()
     img2.src = './assets/img/Desafios/' + indice + '-1.png'
   }
 
-  if (indice == 2) {
+  if (indice == 12) {
     $(
       '<a id="curral" class="btn btn-primary" href="curral.html" style="background-color: #3298ff; font-size: 20px; margin: auto; margin-top:20px;">Iniciar desafio</a>',
     ).insertAfter('#ImagemDesafio')
@@ -111,7 +111,7 @@ function AntesProximo(elem, type, random, setIndice) {
       .setAttribute('style', 'display:block')
   }
 
-  if (indice == 2) {
+  if (indice == 12) {
     img2.onerror = function () {
       document
         .getElementById('IlustracaoDesafio')
