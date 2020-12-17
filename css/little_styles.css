@@ -10,6 +10,9 @@
   }
 }
 
+#menu-two-columns {
+  columns: 2;
+}
 .VinhetasIMG {
   height: 200px;
   width: 200px;
