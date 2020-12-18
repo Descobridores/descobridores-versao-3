@@ -10,6 +10,13 @@
   }
 }
 
+@media screen and (max-width: 766px) {
+  /* desaparece logo no celular*/
+  #logo {
+    padding-bottom: 100px;
+  }
+}
+
 #menu-two-columns {
   columns: 2;
 }
