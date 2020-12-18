@@ -10,7 +10,7 @@
   }
 }
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 575px) {
   /* desaparece logo no celular*/
   #logo {
     padding-bottom: 100px;
