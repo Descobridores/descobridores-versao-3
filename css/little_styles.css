@@ -2,11 +2,20 @@
   .SubTitle {
     font-size: 30px;
   }
+
+  .Instrucoes {
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 1000px) {
   .SubTitle {
     font-size: 40px;
+  }
+
+  .Instrucoes {
+    padding-top: 110px;
+    margin-left: 50px;
   }
 }
 
@@ -15,6 +24,14 @@
   #logo {
     padding-bottom: 100px;
   }
+}
+
+.BotaoInstrucoes {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: #3298ff;
 }
 
 #menu-two-columns {
