@@ -121,7 +121,11 @@
           </div>
         </div>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark"
+          style="margin-left: -50px"
+          id="mainNav"
+        >
           <div class="container">
             <button
               class="navbar-toggler navbar-toggler-right"
@@ -142,34 +146,9 @@
                 style="margin-right: auto !important"
               >
                 <li class="parent nav-item dropdown">
-                  <a class="nav-link" href="#" id="navbarDropdown">
-                    <img
-                      class="Lupa"
-                      src="./assets/img/Lupa.png"
-                      alt="Buscar"
-                    />
-                  </a>
-                  <ul class="child">
-                    <li>
-                      <form style="display: flex">
-                        <input
-                          type="text"
-                          id="busca"
-                          placeholder="Buscar Desafio"
-                        />
-                        <button
-                          onclick="window.localStorage.setItem('busca',document.getElementById('busca').value);"
-                        >
-                          <a href="busca.html">Buscar</a>
-                        </button>
-                      </form>
-                    </li>
-                  </ul>
-                </li>
-                <li class="parent nav-item dropdown">
-                  <a class="nav-link" href="javascript:">
-                    <b class="BotaoNavMain">Descobridores</b>
-                  </a>
+                  <a class="nav-link" href="javascript:"
+                    ><b class="BotaoNavMain">Descobridores</b></a
+                  >
                   <ul class="child">
                     <li><a class="dropdown-item" href="#">O que é</a></li>
                     <li class="parent">
@@ -188,7 +167,7 @@
                         <li>
                           <a
                             class="dropdown-item"
-                            href="./professores.html"
+                            href="./orientadores.html"
                             nowrap
                             >Orientadores</a
                           >
@@ -411,6 +390,31 @@
                   <a class="nav-link" href="./links.html"
                     ><b class="BotaoNavMain">Links</b></a
                   >
+                </li>
+                <li class="parent nav-item dropdown">
+                  <a class="nav-link" href="javascript:" id="navbarDropdown">
+                    <img
+                      class="Lupa"
+                      src="./assets/img/Lupa.png"
+                      alt="Buscar"
+                    />
+                  </a>
+                  <ul class="child">
+                    <li>
+                      <form style="display: flex">
+                        <input
+                          type="text"
+                          id="busca"
+                          placeholder="Buscar Desafio"
+                        />
+                        <button
+                          onclick="window.localStorage.setItem('busca',document.getElementById('busca').value);"
+                        >
+                          <a href="busca.html">Buscar</a>
+                        </button>
+                      </form>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>

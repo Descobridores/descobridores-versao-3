@@ -133,7 +133,11 @@
           </div>
         </div>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark"
+          style="margin-left: -50px"
+          id="mainNav"
+        >
           <div class="container">
             <button
               class="navbar-toggler navbar-toggler-right"
@@ -153,31 +157,6 @@
                 class="navbar-nav text-uppercase ml-auto"
                 style="margin-right: auto !important"
               >
-                <li class="parent nav-item dropdown">
-                  <a class="nav-link" href="#" id="navbarDropdown">
-                    <img
-                      class="Lupa"
-                      src="./assets/img/Lupa.png"
-                      alt="Buscar"
-                    />
-                  </a>
-                  <ul class="child">
-                    <li>
-                      <form style="display: flex">
-                        <input
-                          type="text"
-                          id="busca"
-                          placeholder="Buscar Desafio"
-                        />
-                        <button
-                          onclick="window.localStorage.setItem('busca',document.getElementById('busca').value);"
-                        >
-                          <a class="LinkBusca" href="busca.html">Buscar</a>
-                        </button>
-                      </form>
-                    </li>
-                  </ul>
-                </li>
                 <li class="parent nav-item dropdown">
                   <a class="nav-link" href="javascript:"
                     ><b class="BotaoNavMain">Descobridores</b></a
@@ -424,6 +403,31 @@
                     ><b class="BotaoNavMain">Links</b></a
                   >
                 </li>
+                <li class="parent nav-item dropdown">
+                  <a class="nav-link" href="javascript:" id="navbarDropdown">
+                    <img
+                      class="Lupa"
+                      src="./assets/img/Lupa.png"
+                      alt="Buscar"
+                    />
+                  </a>
+                  <ul class="child">
+                    <li>
+                      <form style="display: flex">
+                        <input
+                          type="text"
+                          id="busca"
+                          placeholder="Buscar Desafio"
+                        />
+                        <button
+                          onclick="window.localStorage.setItem('busca',document.getElementById('busca').value);"
+                        >
+                          <a href="busca.html">Buscar</a>
+                        </button>
+                      </form>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </div>
@@ -433,16 +437,16 @@
           <div class="Instrucoes col-lg-2 col-md-2 col-sm-12 text-center mt-4">
             <section class="text-light pt-3" style="background-color: #e9e9e9">
               <p style="color: rgb(53, 53, 53); font-size: 26px">
-                <strong>Instruções</strong>
+                <strong class="gotham">Instruções</strong>
               </p>
               <button
-                class="BotaoInstrucoes btn btn-primary"
+                class="BotaoInstrucoes btn btn-primary gotham"
                 onclick="AbrirPDF('analise')"
               >
                 Análise
               </button>
               <button
-                class="BotaoInstrucoes btn btn-primary"
+                class="BotaoInstrucoes btn btn-primary gotham"
                 onclick="AbrirPDF('acomp')"
               >
                 Descobridores em Casa
@@ -451,7 +455,7 @@
           </div>
           <div class="col-lg-8 col-md-12 col-sm-12">
             <hr class="linha" />
-            <h1 id="TituloDesafio" class="TituloPagina"></h1>
+            <h1 id="TituloDesafio" class="TituloPagina gotham"></h1>
             <hr class="linha" />
 
             <section class="container" id="desafio" value="0">
@@ -463,6 +467,7 @@
                   <div id="DivTextoDesafio">
                     <p
                       id="TextoDesafio"
+                      class="gotham"
                       style="
                         color: black;
                         text-align: justify !important;

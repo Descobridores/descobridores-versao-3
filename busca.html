@@ -126,7 +126,11 @@
           </div>
         </div>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark"
+          style="margin-left: -50px"
+          id="mainNav"
+        >
           <div class="container">
             <button
               class="navbar-toggler navbar-toggler-right"
@@ -146,31 +150,6 @@
                 class="navbar-nav text-uppercase ml-auto"
                 style="margin-right: auto !important"
               >
-                <li class="parent nav-item dropdown">
-                  <a class="nav-link" href="#" id="navbarDropdown">
-                    <img
-                      class="Lupa"
-                      src="./assets/img/Lupa.png"
-                      alt="Buscar"
-                    />
-                  </a>
-                  <ul class="child">
-                    <li>
-                      <form style="display: flex">
-                        <input
-                          type="text"
-                          id="busca"
-                          placeholder="Buscar Desafio"
-                        />
-                        <button
-                          onclick="window.localStorage.setItem('busca',document.getElementById('busca').value);"
-                        >
-                          <a href="busca.html">Buscar</a>
-                        </button>
-                      </form>
-                    </li>
-                  </ul>
-                </li>
                 <li class="parent nav-item dropdown">
                   <a class="nav-link" href="javascript:"
                     ><b class="BotaoNavMain">Descobridores</b></a
@@ -417,6 +396,31 @@
                     ><b class="BotaoNavMain">Links</b></a
                   >
                 </li>
+                <li class="parent nav-item dropdown">
+                  <a class="nav-link" href="javascript:" id="navbarDropdown">
+                    <img
+                      class="Lupa"
+                      src="./assets/img/Lupa.png"
+                      alt="Buscar"
+                    />
+                  </a>
+                  <ul class="child">
+                    <li>
+                      <form style="display: flex">
+                        <input
+                          type="text"
+                          id="busca"
+                          placeholder="Buscar Desafio"
+                        />
+                        <button
+                          onclick="window.localStorage.setItem('busca',document.getElementById('busca').value);"
+                        >
+                          <a href="busca.html">Buscar</a>
+                        </button>
+                      </form>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </div>
@@ -424,24 +428,76 @@
         <br />
         <!-- Page -->
         <div class="container">
-          <div id="titulo"></div>
+          <section class="container">
+            <h1 id="titulo">Busca</h1>
+          </section>
           <div class="row">
-            <!-- Dogs -->
-            <div id="0" class="col-lg-4 col-md-6 col-sm-12 Vinheta">
+            <!-- Aposte na soma -->
+            <div id="0" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
               <a
                 onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 0);"
                 href="./desafio.html"
               >
                 <img
                   class="img-fluid img-thumbnail zoom VinhetasIMG"
-                  src="./assets/img/Vinhetas/cachorros.png"
+                  src="./assets/img/Vinhetas/soma.png"
                 />
               </a>
             </div>
-            <!-- Flag -->
-            <div id="1" class="col-lg-4 col-md-6 col-sm-12 Vinheta">
+            <!-- Construindo Pipas -->
+            <div id="1" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
               <a
                 onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 1);"
+                href="./desafio.html"
+              >
+                <img
+                  class="img-fluid img-thumbnail zoom VinhetasIMG"
+                  src="./assets/img/Vinhetas/pipas.png"
+                />
+              </a>
+            </div>
+            <!-- Desafio da Escada -->
+            <div id="2" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
+              <a
+                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 2);"
+                href="./desafio.html"
+              >
+                <img
+                  class="img-fluid img-thumbnail zoom VinhetasIMG"
+                  src="./assets/img/Vinhetas/escada.png"
+                />
+              </a>
+            </div>
+            <!-- Desafio da Ilha -->
+            <div id="3" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
+              <a
+                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 3);"
+                href="./desafio.html"
+              >
+                <img
+                  class="img-fluid img-thumbnail zoom VinhetasIMG"
+                  src="./assets/img/Vinhetas/ilha.png"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Desafio da Pá Suja -->
+            <div id="4" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
+              <a
+                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 4);"
+                href="./desafio.html"
+              >
+                <img
+                  class="img-fluid img-thumbnail zoom VinhetasIMG"
+                  src="./assets/img/Vinhetas/pa.png"
+                />
+              </a>
+            </div>
+            <!-- Desafio das Bandeiras -->
+            <div id="5" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
+              <a
+                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 5);"
                 href="./desafio.html"
               >
                 <img
@@ -450,10 +506,87 @@
                 />
               </a>
             </div>
-            <!-- Corral -->
-            <div id="2" class="col-lg-4 col-md-6 col-sm-12 Vinheta">
+            <!-- Desafio das Varetas -->
+            <div id="6" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
               <a
-                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 2);"
+                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 6);"
+                href="./desafio.html"
+              >
+                <img
+                  class="img-fluid img-thumbnail zoom VinhetasIMG"
+                  src="./assets/img/Vinhetas/varetas.png"
+                />
+              </a>
+            </div>
+            <!-- Desafio do Dragão -->
+            <div id="7" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
+              <a
+                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 7);"
+                href="./desafio.html"
+              >
+                <img
+                  class="img-fluid img-thumbnail zoom VinhetasIMG"
+                  src="./assets/img/Vinhetas/dragao.png"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Flores no jardim -->
+            <div id="8" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
+              <a
+                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 8);"
+                href="./desafio.html"
+              >
+                <img
+                  class="img-fluid img-thumbnail zoom VinhetasIMG"
+                  src="./assets/img/Vinhetas/flores.png"
+                />
+              </a>
+            </div>
+            <!-- Gincana das Alturas -->
+            <div id="9" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
+              <a
+                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 9);"
+                href="./desafio.html"
+              >
+                <img
+                  class="img-fluid img-thumbnail zoom VinhetasIMG"
+                  src="./assets/img/Vinhetas/alturas.jpg"
+                />
+              </a>
+            </div>
+            <!-- Milu e Nala -->
+            <div id="10" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
+              <a
+                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 10);"
+                href="./desafio.html"
+              >
+                <img
+                  class="img-fluid img-thumbnail zoom VinhetasIMG"
+                  src="./assets/img/Vinhetas/cachorros.png"
+                />
+              </a>
+            </div>
+            <!-- Monstros na Roda -->
+            <div id="11" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
+              <a
+                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 11);"
+                href="./desafio.html"
+              >
+                <img
+                  class="img-fluid img-thumbnail zoom VinhetasIMG"
+                  src="./assets/img/Vinhetas/monstros.png"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Organizando o Curral -->
+            <div id="12" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
+              <a
+                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 12);"
                 href="./desafio.html"
               >
                 <img
@@ -462,53 +595,10 @@
                 />
               </a>
             </div>
-          </div>
-          <div class="row">
-            <!-- Heights -->
-            <div id="3" class="col-lg-4 col-md-6 col-sm-12 Vinheta">
-              <a href="#">
-                <img
-                  class="img-fluid img-thumbnail zoom VinhetasIMG"
-                  src="./assets/img/Vinhetas/alturas.jpg"
-                />
-              </a>
-            </div>
-            <!-- Stairs -->
-            <div id="4" class="col-lg-4 col-md-6 col-sm-12 Vinheta">
-              <a href="#">
-                <img
-                  class="img-fluid img-thumbnail zoom VinhetasIMG"
-                  src="./assets/img/Vinhetas/escada.jpg"
-                />
-              </a>
-            </div>
-            <!-- Flowers -->
-            <div id="5" class="col-lg-4 col-md-6 col-sm-12 Vinheta">
-              <a href="#">
-                <img
-                  class="img-fluid img-thumbnail zoom VinhetasIMG"
-                  src="./assets/img/Vinhetas/flores.jpg"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <!-- Triangles -->
-            <div id="6" class="col-lg-4 col-md-6 col-sm-12 Vinheta">
+            <!-- Palitos coloridos -->
+            <div id="13" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
               <a
-                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 7);"
-                href="./desafio.html"
-              >
-                <img
-                  class="img-fluid img-thumbnail zoom VinhetasIMG"
-                  src="./assets/img/Vinhetas/triangulos.png"
-                />
-              </a>
-            </div>
-            <!-- Toothpicks -->
-            <div id="7" class="col-lg-4 col-md-6 col-sm-12 Vinheta">
-              <a
-                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 6);"
+                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 13);"
                 href="./desafio.html"
               >
                 <img
@@ -517,18 +607,83 @@
                 />
               </a>
             </div>
-            <!-- Rods -->
-            <div id="8" class="col-lg-4 col-md-6 col-sm-12 Vinheta">
-              <a href="#">
+            <!-- Quantos Retângulos? -->
+            <div id="14" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
+              <a
+                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 14);"
+                href="./desafio.html"
+              >
                 <img
                   class="img-fluid img-thumbnail zoom VinhetasIMG"
-                  src="./assets/img/Vinhetas/varetas.jpg"
+                  src="./assets/img/Vinhetas/retangulos.png"
+                />
+              </a>
+            </div>
+            <!-- Sequência de Triângulos -->
+            <div id="15" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
+              <a
+                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 15);"
+                href="./desafio.html"
+              >
+                <img
+                  class="img-fluid img-thumbnail zoom VinhetasIMG"
+                  src="./assets/img/Vinhetas/sequencia.png"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Torre da Matilda -->
+            <div id="16" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
+              <a
+                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 16);"
+                href="./desafio.html"
+              >
+                <img
+                  class="img-fluid img-thumbnail zoom VinhetasIMG"
+                  src="./assets/img/Vinhetas/torre.png"
+                />
+              </a>
+            </div>
+            <!-- Triângulos amigos -->
+            <div id="17" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
+              <a
+                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 17);"
+                href="./desafio.html"
+              >
+                <img
+                  class="img-fluid img-thumbnail zoom VinhetasIMG"
+                  src="./assets/img/Vinhetas/amigos.png"
+                />
+              </a>
+            </div>
+            <!-- Triângulos no Pentágono -->
+            <div id="18" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
+              <a
+                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 18);"
+                href="./desafio.html"
+              >
+                <img
+                  class="img-fluid img-thumbnail zoom VinhetasIMG"
+                  src="./assets/img/Vinhetas/pentagono.png"
+                />
+              </a>
+            </div>
+            <!-- Triângulos numéricos -->
+            <div id="19" class="col-lg-3 col-md-6 col-sm-12 Vinheta">
+              <a
+                onclick="window.localStorage.setItem('aleatorio','false'); window.localStorage.setItem('indice', 19);"
+                href="./desafio.html"
+              >
+                <img
+                  class="img-fluid img-thumbnail zoom VinhetasIMG"
+                  src="./assets/img/Vinhetas/triangulos.png"
                 />
               </a>
             </div>
           </div>
         </div>
-        <br />
         <hr />
       </main>
       <footer class="footer py-2">

@@ -26,6 +26,10 @@
   }
 }
 
+.gotham {
+  font-family: 'Gotham';
+}
+
 .LinkBusca:hover {
   text-decoration: none;
   color: inherit;
