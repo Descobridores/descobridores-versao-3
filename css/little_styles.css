@@ -26,6 +26,13 @@
   }
 }
 
+.LinkBusca:hover {
+  text-decoration: none;
+  color: inherit;
+  background-color: none;
+  cursor: auto;
+}
+
 .BotaoInstrucoes {
   margin-right: auto;
   margin-left: auto;

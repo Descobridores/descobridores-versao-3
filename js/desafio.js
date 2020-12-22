@@ -45,10 +45,11 @@ var Descricoes = [
 var Tamanho = Titulos.length - 1
 
 function download(uri, nome) {
-  var link = document.createElement('a')
-  link.download = nome
-  link.href = uri
-  link.click()
+  // var link = document.createElement('a')
+  // link.download = nome
+  // link.href = uri
+  // link.click()
+  window.open('./assets/pdf/MiluNalaANÁLISE.pdf')
 }
 
 function AntesProximo(elem, type, random, setIndice) {
