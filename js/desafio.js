@@ -48,14 +48,14 @@ var Descricoes = [
 var Tamanho = Titulos.length - 1
 
 function AbrirPDF(setter) {
-  var pdf = new Image()
+  var pdf
   var validaIndice = indice >= 1 && indice <= 20
   if (setter === 'acomp' && validaIndice) {
-    pdf.src = './assets/pdf/' + indice + 'acomp.pdf'
+    pdf = './assets/pdf/' + indice + 'acomp.pdf'
   } else if (setter === 'analise' && validaIndice) {
-    pdf.src = './assets/pdf/' + indice + 'analise.pdf'
+    pdf = './assets/pdf/' + indice + 'analise.pdf'
   }
-  window.open(pdf.src, false)
+  window.open(pdf)
 }
 
 function AntesProximo(elem, type, random, setIndice) {
