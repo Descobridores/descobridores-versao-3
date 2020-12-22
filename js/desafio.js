@@ -1,25 +1,28 @@
 var Titulos = [
-  'Aposte na Soma',
-  'Construindo Pipas',
-  'Desafio da Escada',
-  'Desafio da Ilha',
-  'Desafio da Pá Suja',
-  'Desafio das Bandeiras',
-  'Desafio das Varetas',
-  'Desafio do Dragão',
-  'Flores no Jardim',
-  'Gincana das Alturas',
-  'Milu e Nala',
-  'Monstros na Roda',
-  'Organizando o Curral',
-  'Palitos Coloridos',
-  'Quantos Retângulos?',
-  'Sequência de Triângulos',
-  'Torre da Matilda',
-  'Triângulos Amigos',
-  'Triângulos no Pentágono',
-  'Triângulos Numéricos',
+  'Aposte na Soma', //0
+  'Construindo Pipas', //1
+  'Desafio da Escada', //2
+  'Desafio da Ilha', //3
+  'Desafio da Pá Suja', //4
+  'Desafio das Bandeiras', //5
+  'Desafio das Varetas', //6
+  'Desafio do Dragão', //7
+  'Flores no Jardim', //8
+  'Gincana das Alturas', //9
+  'Milu e Nala', //10
+  'Monstros na Roda', //11
+  'Organizando o Curral', //12
+  'Palitos Coloridos', //13
+  'Quantos Retângulos?', //14
+  'Sequência de Triângulos', //15
+  'Torre da Matilda', //16
+  'Triângulos Amigos', //17
+  'Triângulos no Pentágono', //18
+  'Triângulos Numéricos', //19
 ]
+
+var indice
+
 var Descricoes = [
   'Podem jogar dois ou mais jogadores. Nesse desafio, a cada jogada, são lançados dois dados ao mesmo tempo e os números de suas faces são somados. O que vale é o resultado da soma. Quais são os possíveis resultados dessas somas? Agora vamos apostar! Cada descobridor escolhe um dos possíveis resultados das somas para apostar. Um sorteio define a ordem dos jogadores. O primeiro a jogar lança o par de dados e anota o resultado da soma num papel. O próximo jogador também joga o par de dados e anota o resultado no mesmo papel, e assim por diante. O jogo termina quando cada um jogar o par de dados 20 vezes. Ganha quem apostou no resultado que foi anotado mais vezes no papel. Todas as apostas têm a mesma chance de ganhar? Por quê?',
   'Júlia e Dudu são irmãos e resolveram construir pipas com a ajuda do pai. Eles tinham papéis de 3 cores diferentes, azul, laranja e amarelo. O modelo que querem construir possui 5 partes, como representado ao lado. Eles querem que as partes que se tocam na pipa não tenham a mesma cor.',
@@ -44,16 +47,19 @@ var Descricoes = [
 ]
 var Tamanho = Titulos.length - 1
 
-function download(uri, nome) {
-  // var link = document.createElement('a')
-  // link.download = nome
-  // link.href = uri
-  // link.click()
-  window.open('./assets/pdf/MiluNalaANÁLISE.pdf')
+function AbrirPDF(setter) {
+  var pdf = new Image()
+  var validaIndice = indice >= 1 && indice <= 20
+  if (setter === 'acomp' && validaIndice) {
+    pdf.src = './assets/pdf/' + indice + 'acomp.pdf'
+  } else if (setter === 'analise' && validaIndice) {
+    pdf.src = './assets/pdf/' + indice + 'analise.pdf'
+  }
+  window.open(pdf.src, false)
 }
 
 function AntesProximo(elem, type, random, setIndice) {
-  var indice = parseInt(elem.name)
+  indice = parseInt(elem.name)
 
   if (type == 1) {
     if (indice >= Tamanho) return
@@ -87,10 +93,10 @@ function AntesProximo(elem, type, random, setIndice) {
   //Troca de imagem
   var img1 = new Image()
   img1.src = './assets/img/Desafios/' + indice + '.png'
-  // Para testar texto e imagem separados no desafio do curral
   var img2 = new Image()
   img2.src = './assets/img/Desafios/' + indice + '-1.png'
 
+  // Para testar texto e imagem separados no desafio do curral
   if (indice == 12) {
     $(
       '<a id="curral" class="btn btn-primary" href="curral.html" style="background-color: #3298ff; font-size: 20px; margin: auto; margin-top:20px;">Iniciar desafio</a>',
@@ -168,7 +174,6 @@ function ChecaSetas(indice) {
 }
 
 // LOGICA BUSCA
-
 function retiraAcentos(str) {
   com_acento =
     'ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝŔÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿŕ'
@@ -191,7 +196,6 @@ function retiraAcentos(str) {
   }
   return novastr
 }
-
 function inserir_imagens(busca) {
   var i = 0
   var indexs = []
