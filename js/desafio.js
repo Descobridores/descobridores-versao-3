@@ -109,8 +109,6 @@ function AntesProximo(elem, type, random, setIndice) {
 
   img1.onload = function () {
     document.getElementById('ImagemDesafio').setAttribute('src', img1.src)
-    document.getElementById('ImagemDesafio').style.cssText =
-      'height: 380px; width: 380px;'
   }
   ChecaSetas(indice)
 }
