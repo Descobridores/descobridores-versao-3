@@ -30,6 +30,10 @@
   font-family: 'Gotham';
 }
 
+.Instrucoes section {
+  padding-bottom: 5px;
+}
+
 .LinkBusca:hover {
   text-decoration: none;
   color: inherit;
@@ -38,10 +42,10 @@
 }
 
 .BotaoInstrucoes {
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 5%;
+  margin-left: 5%;
   margin-bottom: 20px;
-  width: 100%;
+  width: 90%;
   background-color: #3298ff;
 }
 
@@ -221,6 +225,10 @@ p {
 }
 
 .resposta {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+  width: 90%;
   border: #88c4ff solid 3px;
   border-radius: 10px;
 }
