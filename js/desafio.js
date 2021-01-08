@@ -197,9 +197,11 @@ function inserir_imagens(busca) {
   titulo.innerHTML =
     '<h2>Resultados da pesquisa por: ' + '"' + busca + '"' + ' </h2><hr>'
 
-  for (i = 0; i <= Tamanho; i++) $('#' + i).hide()
+  for (i = 0; i <= Tamanho; i++) $('#vinheta' + i).hide()
 
-  for (i = 0; indexs[i] !== undefined; i++) {
-    $(`#${indexs[i]}`).show()
+  $('#vinheta' + indexs[0]).show()
+  for (i = 1; indexs[i] !== undefined; i++) {
+    $('#vinheta' + indexs[i - 1]).after($('#vinheta' + indexs[i]))
+    $('#vinheta' + indexs[i]).show()
   }
 }
