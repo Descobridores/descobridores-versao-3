@@ -97,3 +97,57 @@ function insert_images() {
 
   images.innerHTML = inner
 }
+function shuffle(array) {
+  var currentIndex = array.length,
+    temporaryValue,
+    randomIndex
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex -= 1
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex]
+    array[currentIndex] = array[randomIndex]
+    array[randomIndex] = temporaryValue
+  }
+
+  return array
+}
+
+function shuffle_images() {
+  var i
+  for (i = 0; i < 20; i++) $('#vinheta' + i).hide()
+
+  var array = [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+  ]
+  shuffle(array)
+
+  $('#vinheta' + array[0]).show()
+  for (i = 1; i < 20; i++) {
+    $('#vinheta' + array[i - 1]).after($('#vinheta' + array[i]))
+    $('#vinheta' + array[i]).show()
+  }
+}
