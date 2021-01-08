@@ -17,6 +17,7 @@ const tic_tac_toe = {
   boi: 3,
   tentativas: 0,
   botoes: null,
+  correct: false,
   container_element: null,
 
   // FUNCTIONS
@@ -141,6 +142,14 @@ const tic_tac_toe = {
   },
 
   make_play: function (position) {
+    if (!this.is_full()) {
+      $('#tentar').hide()
+    }
+
+    if (this.tentativas == 0) {
+      $('#tentativas').hide()
+    } else $('#tentativas').show()
+
     if (this.board[position] === '' && this.symbols.turn_index != 3) {
       this.board[position] = this.symbols.options[this.symbols.turn_index]
 
@@ -149,10 +158,18 @@ const tic_tac_toe = {
       if (this.is_full()) {
         if (this.check_board()) {
           this.color_board_red()
-          return true
+          document.getElementById('tentar').className += 'pulse'
+          document.getElementById('tentar').textContent =
+            'Que Pena! Tente de novo!'
+          // return true
         } else {
           this.color_board_green()
+          document.getElementById('tentar').className += 'correct'
+          document.getElementById('tentar').textContent =
+            'Parabéns! Você descobriu!'
+          this.correct = true
         }
+        $('#tentar').show()
       } else return false
 
       return true
@@ -219,22 +236,26 @@ const tic_tac_toe = {
       this.tentativas +
       '</h4>' +
       '<div class="row">' +
-      '<button id="porco1" class="btn" onclick="tic_tac_toe.symbols.change(0, 1)" style="height: 100px; width: 100px"> <img src="./assets/img/porco.png" style="height: 70px; width: 70px" /></button>' +
-      '<button id="porco2" class="btn" onclick="tic_tac_toe.symbols.change(0, 2)" style="height: 100px; width: 100px"> <img src="./assets/img/porco.png" style="height: 70px; width: 70px" /></button>' +
+      '<button id="porco1" class="btn button" onclick="tic_tac_toe.symbols.change(0, 1)" style="height: 100px; width: 100px;"> <img src="./assets/img/porco.png" style="height: 70px; width: 70px" /></button>' +
+      '<button id="porco2" class="btn button" onclick="tic_tac_toe.symbols.change(0, 2)" style="height: 100px; width: 100px"> <img src="./assets/img/porco.png" style="height: 70px; width: 70px" /></button>' +
       '</div>' +
       '<div class="row">' +
-      '<button id="cavalo1" class="btn" onclick="tic_tac_toe.symbols.change(1, 3)" style="height: 100px; width: 100px"> <img src="./assets/img/cavalo.png" style="height: 70px; width: 70px"/></button>' +
-      '<button id="cavalo2" class="btn" onclick="tic_tac_toe.symbols.change(1, 4)" style="height: 100px; width: 100px"> <img src="./assets/img/cavalo.png" style="height: 70px; width: 70px"/></button>' +
+      '<button id="cavalo1" class="btn button" onclick="tic_tac_toe.symbols.change(1, 3)" style="height: 100px; width: 100px"> <img src="./assets/img/cavalo.png" style="height: 70px; width: 70px"/></button>' +
+      '<button id="cavalo2" class="btn button" onclick="tic_tac_toe.symbols.change(1, 4)" style="height: 100px; width: 100px"> <img src="./assets/img/cavalo.png" style="height: 70px; width: 70px"/></button>' +
       '</div>' +
       '<div class="row">' +
-      '<button id="boi1" class="btn" onclick="tic_tac_toe.symbols.change(2, 5)" style="height: 100px; width: 100px"> <img src="./assets/img/boi.png" style="height: 70px; width: 70px"/><br /></button>' +
-      '<button id="boi2" class="btn" onclick="tic_tac_toe.symbols.change(2, 6)" style="height: 100px; width: 100px"> <img src="./assets/img/boi.png" style="height: 70px; width: 70px"/><br /></button>' +
-      '<button id="boi3" class="btn" onclick="tic_tac_toe.symbols.change(2, 7)" style="height: 100px; width: 100px"> <img src="./assets/img/boi.png" style="height: 70px; width: 70px"/><br /></button>' +
+      '<button id="boi1" class="btn button" onclick="tic_tac_toe.symbols.change(2, 5)" style="height: 100px; width: 100px"> <img src="./assets/img/boi.png" style="height: 70px; width: 70px"/><br /></button>' +
+      '<button id="boi2" class="btn button" onclick="tic_tac_toe.symbols.change(2, 6)" style="height: 100px; width: 100px"> <img src="./assets/img/boi.png" style="height: 70px; width: 70px"/><br /></button>' +
+      '<button id="boi3" class="btn button" onclick="tic_tac_toe.symbols.change(2, 7)" style="height: 100px; width: 100px"> <img src="./assets/img/boi.png" style="height: 70px; width: 70px"/><br /></button>' +
       '</div>' +
-      '<br /><br /> <button class="btn btn-primary" onclick="tic_tac_toe.start()"> Tentar de novo </button>'
+      '<br /><br /> <button class="" id="tentar" onclick="tic_tac_toe.start()"> Tentar de novo </button>'
 
     this.container_element.innerHTML = content
     this.botoes.innerHTML = draw_botoes
+    if (this.tentativas == 0) {
+      document.querySelector('#tentativas').style.display = 'none'
+    }
+    document.querySelector('#tentar').style.display = 'none'
   },
 
   check_board_position: function () {
@@ -252,7 +273,12 @@ const tic_tac_toe = {
   },
 
   start: function () {
+    console.log(this.correct)
     if (this.check_board_position()) this.tentativas++
+    if (this.correct) {
+      this.tentativas = 0
+      this.correct = false
+    }
     this.board = ['', '', 'P', '', '', '', 'C', '', '']
     this.symbols.turn_index = 3
     this.wrong_indexs = []

@@ -267,25 +267,23 @@ input:checked {
   outline: none;
 }
 
-button,
-legend {
+.button {
   color: #ffffff;
-  background-color: #88c4ff;
-  padding: 5px 10px;
-  border-radius: 20px;
-  border: 0;
+  background-color: #ffffff;
+  /* border-radius: 20px; */
+  /* border: 0; */
   font-size: 14px;
   outline: none;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-button:hover,
-button:focus {
+.button:hover,
+.button:focus {
   background-color: #3298ff;
   outline: none;
+  z-index: 100;
 }
 
-button:active {
+.button:active {
   background-color: white;
   color: black;
   outline: none;
@@ -298,6 +296,10 @@ button:active {
 .AntesProximo button {
   height: 50px;
   margin-top: 10px;
+  background-color: #3298ff;
+  border-radius: 20px;
+  outline: none;
+  border: 0;
 }
 
 .AntesProximo button img {
@@ -500,4 +502,100 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* BOTAO CURRAL */
+.correct {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #2fcc1a;
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(90, 209, 79, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+.correct:hover,
+.correct:focus {
+  color: #ffffff;
+  transform: translateY(-6px);
+}
+
+.correct:hover::before,
+.correct:focus::before {
+  opacity: 1;
+}
+
+.correct::after {
+  content: '';
+  border-radius: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pulse {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #cc1a1a;
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(209, 79, 79, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+.pulse:hover,
+.pulse:focus {
+  color: #ffffff;
+  transform: translateY(-6px);
+}
+
+.pulse:hover::before,
+.pulse:focus::before {
+  opacity: 1;
+}
+
+.pulse::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #ff0000;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 2s infinite;
+}
+
+.pulse:hover::after,
+.pulse:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
 }
