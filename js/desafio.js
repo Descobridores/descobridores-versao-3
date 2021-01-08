@@ -86,15 +86,13 @@ function AntesProximo(elem, type, random, setIndice) {
   document.getElementById('TituloDesafio').append(texto)
 
   // Troca de texto
-  var texto = document.createTextNode(Descricoes[indice])
-  $('#TextoDesafio').empty()
-  document.getElementById('TextoDesafio').append(texto)
+  // var texto = document.createTextNode(Descricoes[indice])
+  // $('#TextoDesafio').empty()
+  // document.getElementById('TextoDesafio').append(texto)
 
   //Troca de imagem
   var img1 = new Image()
-  img1.src = './assets/img/Desafios/' + indice + '.png'
-  var img2 = new Image()
-  img2.src = './assets/img/Desafios/' + indice + '-1.png'
+  img1.src = './assets/img/Desafios/' + indice + '.svg'
 
   // Para testar texto e imagem separados no desafio do curral
   if (indice == 12) {
@@ -112,18 +110,6 @@ function AntesProximo(elem, type, random, setIndice) {
   img1.onload = function () {
     document.getElementById('ImagemDesafio').setAttribute('src', img1.src)
     document.getElementById('ImagemDesafio').style.cssText =
-      'height: 380px; width: 380px;'
-  }
-
-  img2.onerror = function () {
-    document
-      .getElementById('IlustracaoDesafio')
-      .setAttribute('style', 'display:none')
-  }
-
-  img2.onload = function () {
-    document.getElementById('IlustracaoDesafio').setAttribute('src', img2.src)
-    document.getElementById('IlustracaoDesafio').style.cssText =
       'height: 380px; width: 380px;'
   }
   ChecaSetas(indice)
