@@ -49,7 +49,7 @@ var Tamanho = Titulos.length - 1
 
 function AbrirPDF(setter) {
   var pdf
-  var validaIndice = indice >= 1 && indice <= 20
+  var validaIndice = indice >= 0 && indice <= 19
   if (setter === 'acomp' && validaIndice) {
     pdf = './assets/pdf/' + indice + 'acomp.pdf'
   } else if (setter === 'analise' && validaIndice) {
@@ -57,6 +57,7 @@ function AbrirPDF(setter) {
   } else if (setter === 'impressao' && validaIndice) {
     pdf = './assets/pdf/' + indice + 'impressao.pdf'
   }
+  console.log(pdf)
   window.open(pdf)
 }
 
