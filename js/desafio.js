@@ -54,6 +54,8 @@ function AbrirPDF(setter) {
     pdf = './assets/pdf/' + indice + 'acomp.pdf'
   } else if (setter === 'analise' && validaIndice) {
     pdf = './assets/pdf/' + indice + 'analise.pdf'
+  } else if (setter === 'impressao' && validaIndice) {
+    pdf = './assets/pdf/' + indice + 'impressao.pdf'
   }
   window.open(pdf)
 }
