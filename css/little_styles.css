@@ -411,9 +411,17 @@ input:checked {
 }
 
 .myImg {
-  border-radius: 5px;
+  border-radius: 10px;
+  border: 5px solid #dee2e6;
   cursor: pointer;
   transition: 0.3s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .myImg:hover {

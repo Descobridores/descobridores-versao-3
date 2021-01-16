@@ -87,7 +87,7 @@ function insert_images() {
       '<div class="col-lg-4 col-md-6 col-sm-12">' +
       '<img id="foto' +
       i +
-      '" class="img-thumbnail myImg" onclick="maximize_images(this)" style="width: 400px; height: 300px;" src="./assets/img/Criancas/' +
+      '" class="img-thumbnail myImg" onclick="maximize_images(this)" style="" src="./assets/img/Criancas/' +
       i +
       '.jpg"/>' +
       '</div>'
