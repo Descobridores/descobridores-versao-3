@@ -377,6 +377,7 @@ input:checked {
 
 .stop-action {
   opacity: 0.5;
+  margin: 15px;
 }
 
 .zoom {
@@ -498,7 +499,7 @@ input:checked {
   border-radius: 10px;
 */
   display: grid;
-  grid-template: repeat(3, 0.25fr) / repeat(3, 0.45fr);
+  grid-template: repeat(3, 0.25fr) / repeat(3, 0.3fr);
 }
 
 .game > div {

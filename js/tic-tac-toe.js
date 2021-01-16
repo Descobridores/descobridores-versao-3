@@ -406,7 +406,7 @@ const tic_tac_toe = {
       case 1:
         var el = document.createElement('porco1')
         el.innerHTML =
-          '<img class="stop-action" src="./assets/img/porco.png" style="height: 100px; width: 100px"/>'
+          '<img class="stop-action" src="./assets/img/porco.png" style="height: 70px; width: 70px"/>'
         var div = document.getElementById('porco1')
         this.insertAfter(div, el)
         try {
@@ -418,7 +418,7 @@ const tic_tac_toe = {
       case 2:
         var el = document.createElement('porco2')
         el.innerHTML =
-          '<img class="stop-action" src="./assets/img/porco.png" style="height: 100px; width: 100px"/>'
+          '<img class="stop-action" src="./assets/img/porco.png" style="height: 70px; width: 70px"/>'
         var div = document.getElementById('porco2')
         this.insertAfter(div, el)
         try {
@@ -430,7 +430,7 @@ const tic_tac_toe = {
       case 3:
         var el = document.createElement('cavalo1')
         el.innerHTML =
-          '<img class="stop-action" src="./assets/img/cavalo.png" style="height: 100px; width: 100px"/>'
+          '<img class="stop-action" src="./assets/img/cavalo.png" style="height: 70px; width: 70px"/>'
         var div = document.getElementById('cavalo1')
         this.insertAfter(div, el)
         try {
@@ -442,7 +442,7 @@ const tic_tac_toe = {
       case 4:
         var el = document.createElement('cavalo2')
         el.innerHTML =
-          '<img class="stop-action" src="./assets/img/cavalo.png" style="height: 100px; width: 100px"/>'
+          '<img class="stop-action" src="./assets/img/cavalo.png" style="height: 70px; width: 70px"/>'
         var div = document.getElementById('cavalo2')
         this.insertAfter(div, el)
         try {
@@ -454,7 +454,7 @@ const tic_tac_toe = {
       case 5:
         var el = document.createElement('boi1')
         el.innerHTML =
-          '<img class="stop-action" src="./assets/img/boi.png" style="height: 100px; width: 100px"/>'
+          '<img class="stop-action" src="./assets/img/boi.png" style="height: 70px; width: 70px"/>'
         var div = document.getElementById('boi1')
         this.insertAfter(div, el)
         try {
@@ -466,7 +466,7 @@ const tic_tac_toe = {
       case 6:
         var el = document.createElement('boi2')
         el.innerHTML =
-          '<img class="stop-action" src="./assets/img/boi.png" style="height: 100px; width: 100px"/>'
+          '<img class="stop-action" src="./assets/img/boi.png" style="height: 70px; width: 70px"/>'
         var div = document.getElementById('boi2')
         this.insertAfter(div, el)
         try {
@@ -478,7 +478,7 @@ const tic_tac_toe = {
       case 7:
         var el = document.createElement('boi3')
         el.innerHTML =
-          '<img class="stop-action" src="./assets/img/boi.png" style="height: 100px; width: 100px"/>'
+          '<img class="stop-action" src="./assets/img/boi.png" style="height: 70px; width: 70px"/>'
         var div = document.getElementById('boi3')
         this.insertAfter(div, el)
         try {
