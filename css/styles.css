@@ -10496,6 +10496,7 @@ img::-moz-selection {
   /* padding-top: 1rem;
   padding-bottom: 1rem; */
   background-color: white;
+  font-family: 'Gotham';
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
