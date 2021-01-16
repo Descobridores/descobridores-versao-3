@@ -54,7 +54,7 @@
   margin-left: 5%;
   margin-bottom: 20px;
   width: 90%;
-  background-color: #f05923;
+  background-color: #bb1515;
 }
 
 #menu-two-columns {
@@ -237,11 +237,11 @@ p {
   margin-right: 5%;
   margin-bottom: 10px;
   width: 90%;
-  border: #f05923 solid 3px;
+  border: #bb1515 solid 3px;
   border-radius: 10px;
 }
 .resposta h2 {
-  color: #f05923;
+  color: #bb1515;
 }
 
 .resposta_textarea {
