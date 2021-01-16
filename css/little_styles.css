@@ -54,7 +54,7 @@
   margin-left: 5%;
   margin-bottom: 20px;
   width: 90%;
-  background-color: #3298ff;
+  background-color: #1b2038;
 }
 
 #menu-two-columns {
@@ -237,11 +237,11 @@ p {
   margin-right: 5%;
   margin-bottom: 10px;
   width: 90%;
-  border: #88c4ff solid 3px;
+  border: #1b2038 solid 3px;
   border-radius: 10px;
 }
 .resposta h2 {
-  color: #3298ff;
+  color: #1b2038;
 }
 
 .resposta_textarea {
@@ -279,7 +279,7 @@ p {
 }
 
 input:checked {
-  border: 6px solid #88c4ff;
+  border: 6px solid #1b2038;
   outline: none;
 }
 
@@ -294,7 +294,7 @@ input:checked {
 
 .button:hover,
 .button:focus {
-  background-color: #3298ff;
+  background-color: #1b2038;
   outline: none;
   z-index: 100;
 }
@@ -312,7 +312,8 @@ input:checked {
 .AntesProximo button {
   height: 50px;
   margin-top: 10px;
-  background-color: #3298ff;
+  color: white;
+  background-color: #4f598d;
   border-radius: 20px;
   outline: none;
   border: 0;
