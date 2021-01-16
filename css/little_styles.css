@@ -54,7 +54,7 @@
   margin-left: 5%;
   margin-bottom: 20px;
   width: 90%;
-  background-color: #ff7b63;
+  background-color: #f05923;
 }
 
 #menu-two-columns {
@@ -237,11 +237,11 @@ p {
   margin-right: 5%;
   margin-bottom: 10px;
   width: 90%;
-  border: #ff7b63 solid 3px;
+  border: #f05923 solid 3px;
   border-radius: 10px;
 }
 .resposta h2 {
-  color: #ff7b63;
+  color: #f05923;
 }
 
 .resposta_textarea {
@@ -279,7 +279,7 @@ p {
 }
 
 input:checked {
-  border: 6px solid #ff7b63;
+  border: 6px solid #f05923;
   outline: none;
 }
 
@@ -294,7 +294,7 @@ input:checked {
 
 .button:hover,
 .button:focus {
-  background-color: #ff7b63;
+  background-color: #f05923;
   outline: none;
   z-index: 100;
 }
