@@ -3,6 +3,10 @@
     font-size: 30px;
   }
 
+  .TitleText {
+    width: auto;
+  }
+
   .Instrucoes {
     margin: auto;
   }
@@ -11,6 +15,10 @@
 @media screen and (min-width: 1000px) {
   .SubTitle {
     font-size: 40px;
+  }
+
+  .TitleText {
+    width: 800px;
   }
 
   .Instrucoes {
