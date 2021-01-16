@@ -294,7 +294,7 @@ input:checked {
 
 .button:hover,
 .button:focus {
-  background-color: #1b2038;
+  background-color: rgb(0, 132, 255);
   outline: none;
   z-index: 100;
 }
