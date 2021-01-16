@@ -216,6 +216,10 @@ p {
   color: #008b9c;
 }
 
+#mainNav {
+  margin-left: 60px;
+}
+
 .BotaoNavMain {
   color: #ec4326;
   font-size: 18px;
