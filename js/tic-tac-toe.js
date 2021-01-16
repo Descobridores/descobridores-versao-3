@@ -159,8 +159,7 @@ const tic_tac_toe = {
         if (this.check_board()) {
           this.color_board_red()
           document.getElementById('tentar').className += 'pulse'
-          document.getElementById('tentar').textContent =
-            'Que Pena! Tente de novo!'
+          document.getElementById('tentar').textContent = 'Tente de novo!'
           // return true
         } else {
           this.color_board_green()
@@ -168,6 +167,8 @@ const tic_tac_toe = {
           document.getElementById('tentar').textContent =
             'Parabéns! Você descobriu!'
           this.correct = true
+          var audio = new Audio('./assets/correct.wav')
+          audio.play()
         }
         $('#tentar').show()
       } else return false
