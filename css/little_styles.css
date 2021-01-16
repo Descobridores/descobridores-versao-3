@@ -1,4 +1,4 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .SubTitle {
     font-size: 30px;
   }
@@ -12,13 +12,13 @@
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .SubTitle {
     font-size: 40px;
   }
 
   .TitleText {
-    width: 800px;
+    width: auto;
   }
 
   .Instrucoes {
@@ -54,7 +54,7 @@
   margin-left: 5%;
   margin-bottom: 20px;
   width: 90%;
-  background-color: #1b2038;
+  background-color: #ff7b63;
 }
 
 #menu-two-columns {
@@ -237,11 +237,11 @@ p {
   margin-right: 5%;
   margin-bottom: 10px;
   width: 90%;
-  border: #1b2038 solid 3px;
+  border: #ff7b63 solid 3px;
   border-radius: 10px;
 }
 .resposta h2 {
-  color: #1b2038;
+  color: #ff7b63;
 }
 
 .resposta_textarea {
@@ -279,7 +279,7 @@ p {
 }
 
 input:checked {
-  border: 6px solid #1b2038;
+  border: 6px solid #ff7b63;
   outline: none;
 }
 
@@ -294,7 +294,7 @@ input:checked {
 
 .button:hover,
 .button:focus {
-  background-color: rgb(0, 132, 255);
+  background-color: #ff7b63;
   outline: none;
   z-index: 100;
 }
