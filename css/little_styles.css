@@ -54,6 +54,8 @@
   margin-left: 5%;
   margin-bottom: 20px;
   width: 90%;
+  font-weight: bold;
+  font-size: 15px;
   background-color: #bb1515;
 }
 
@@ -212,6 +214,10 @@ p {
 
 .azul {
   color: #008b9c;
+}
+
+#mainNav {
+  margin-left: 60px;
 }
 
 .BotaoNavMain {
