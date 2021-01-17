@@ -296,6 +296,11 @@ input:checked {
   outline: none;
 }
 
+.botaoCurral:hover,
+.botaoCurral:focus {
+  background-color: #3298ff;
+}
+
 .button {
   color: #ffffff;
   background-color: #ffffff;
@@ -529,7 +534,7 @@ input:checked {
   border-radius: 10px;
 */
   display: grid;
-  grid-template: repeat(3, 0.25fr) / repeat(3, 0.3fr);
+  grid-template: repeat(3, 0.26fr) / repeat(3, 0.26fr);
 }
 
 .game > div {

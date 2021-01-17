@@ -167,7 +167,7 @@ const tic_tac_toe = {
           document.getElementById('tentar').textContent =
             'Parabéns! Você descobriu!'
           this.correct = true
-          var audio = new Audio('./assets/correct.wav')
+          var audio = new Audio('./assets/correct.mp3')
           audio.play()
         }
         $('#tentar').show()
@@ -237,17 +237,17 @@ const tic_tac_toe = {
       this.tentativas +
       '</h4>' +
       '<div class="row">' +
-      '<button id="porco1" class="btn button" onclick="tic_tac_toe.symbols.change(0, 1)" style="height: 100px; width: 100px;"> <img src="./assets/img/porco.png" style="height: 70px; width: 70px" /></button>' +
-      '<button id="porco2" class="btn button" onclick="tic_tac_toe.symbols.change(0, 2)" style="height: 100px; width: 100px"> <img src="./assets/img/porco.png" style="height: 70px; width: 70px" /></button>' +
+      '<button id="porco1" class="btn botaoCurral" onclick="tic_tac_toe.symbols.change(0, 1)" style="height: 100px; width: 100px;"> <img src="./assets/img/porco.png" style="height: 70px; width: 70px" /></button>' +
+      '<button id="porco2" class="btn botaoCurral" onclick="tic_tac_toe.symbols.change(0, 2)" style="height: 100px; width: 100px"> <img src="./assets/img/porco.png" style="height: 70px; width: 70px" /></button>' +
       '</div>' +
       '<div class="row">' +
-      '<button id="cavalo1" class="btn button" onclick="tic_tac_toe.symbols.change(1, 3)" style="height: 100px; width: 100px"> <img src="./assets/img/cavalo.png" style="height: 70px; width: 70px"/></button>' +
-      '<button id="cavalo2" class="btn button" onclick="tic_tac_toe.symbols.change(1, 4)" style="height: 100px; width: 100px"> <img src="./assets/img/cavalo.png" style="height: 70px; width: 70px"/></button>' +
+      '<button id="cavalo1" class="btn botaoCurral" onclick="tic_tac_toe.symbols.change(1, 3)" style="height: 100px; width: 100px"> <img src="./assets/img/cavalo.png" style="height: 70px; width: 70px"/></button>' +
+      '<button id="cavalo2" class="btn botaoCurral" onclick="tic_tac_toe.symbols.change(1, 4)" style="height: 100px; width: 100px"> <img src="./assets/img/cavalo.png" style="height: 70px; width: 70px"/></button>' +
       '</div>' +
       '<div class="row">' +
-      '<button id="boi1" class="btn button" onclick="tic_tac_toe.symbols.change(2, 5)" style="height: 100px; width: 100px"> <img src="./assets/img/boi.png" style="height: 70px; width: 70px"/><br /></button>' +
-      '<button id="boi2" class="btn button" onclick="tic_tac_toe.symbols.change(2, 6)" style="height: 100px; width: 100px"> <img src="./assets/img/boi.png" style="height: 70px; width: 70px"/><br /></button>' +
-      '<button id="boi3" class="btn button" onclick="tic_tac_toe.symbols.change(2, 7)" style="height: 100px; width: 100px"> <img src="./assets/img/boi.png" style="height: 70px; width: 70px"/><br /></button>' +
+      '<button id="boi1" class="btn botaoCurral" onclick="tic_tac_toe.symbols.change(2, 5)" style="height: 100px; width: 100px"> <img src="./assets/img/boi.png" style="height: 70px; width: 70px"/><br /></button>' +
+      '<button id="boi2" class="btn botaoCurral" onclick="tic_tac_toe.symbols.change(2, 6)" style="height: 100px; width: 100px"> <img src="./assets/img/boi.png" style="height: 70px; width: 70px"/><br /></button>' +
+      '<button id="boi3" class="btn botaoCurral" onclick="tic_tac_toe.symbols.change(2, 7)" style="height: 100px; width: 100px"> <img src="./assets/img/boi.png" style="height: 70px; width: 70px"/><br /></button>' +
       '</div>' +
       '<br /><br /> <button class="" id="tentar" onclick="tic_tac_toe.start()"> Tentar de novo </button>'
 
