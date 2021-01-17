@@ -10559,6 +10559,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink .navbar-brand img {
     height: 1.5rem;
   }
+  /* Espaço elementos menu */
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
   }
