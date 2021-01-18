@@ -72,7 +72,8 @@
   width: 90%;
   font-weight: bold;
   font-size: 15px;
-  background-color: #bb1515;
+  color: #000;
+  background-color: #fbdac3;
 }
 
 #menu-two-columns {
@@ -237,7 +238,7 @@ p {
 }
 
 .BotaoNavMain {
-  color: #ec4326;
+  color: #e45976;
   font-size: 18px;
 }
 
@@ -259,11 +260,11 @@ p {
   margin-right: 5%;
   margin-bottom: 10px;
   width: 90%;
-  border: #bb1515 solid 3px;
+  border: #fbdac3 solid 3px;
   border-radius: 10px;
 }
 .resposta h2 {
-  color: #bb1515;
+  color: #fbdac3;
 }
 
 .resposta_textarea {
@@ -340,7 +341,7 @@ input:checked {
   height: 50px;
   margin-top: 10px;
   color: white;
-  background-color: #4f598d;
+  background-color: #31ae74;
   border-radius: 20px;
   outline: none;
   border: 0;
@@ -367,7 +368,7 @@ input:checked {
 .TituloPagina {
   display: block;
   width: 100%;
-  color: #ec4326;
+  color: #9a1b20;
   font-weight: 500;
   /* font-family: 'Comic Sans MS', cursive, sans-serif; */
   text-align: center;
