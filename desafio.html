@@ -503,6 +503,66 @@
         </nav>
         <!-- Desafio -->
         <div class="row">
+          <div class="col-lg-10 col-md-12 col-sm-12">
+            <hr class="linha" />
+            <h1
+              id="TituloDesafio"
+              class="TituloPagina text-uppercase gotham"
+            ></h1>
+            <hr class="linha" />
+            <section class="container" id="desafio" value="0">
+              <div id="instruções" class="">
+                <div
+                  class="row container align-items-center"
+                  style="margin-right: 0; margin-left: 0"
+                >
+                  <div id="DivTextoDesafio">
+                    <p
+                      id="TextoDesafio"
+                      class="gotham"
+                      style="
+                        color: black;
+                        text-align: justify !important;
+                        font-size: 20px;
+                      "
+                    ></p>
+                  </div>
+                  <img
+                    src=""
+                    class="img-thumbnail mt-3 col-lg-12 col-md-12 col-sm-12"
+                    id="ImagemDesafio"
+                    alt="Desafio"
+                    onclick="maximize_images(this)"
+                  />
+                </div>
+              </div>
+              <div class="AntesProximo align-items-center row">
+                <button
+                  id="Anterior"
+                  class="col-lg-1 col-md-2 col-3"
+                  name="0"
+                  style="margin-right: auto; margin-left: auto"
+                  onclick="AntesProximo(this, 0, false, -1)"
+                >
+                  <img src="./assets/img/Antes.png" alt="Anterior" />
+                </button>
+                <button
+                  id="Proximo"
+                  class="col-lg-1 col-md-2 col-3"
+                  name="0"
+                  style="margin-left: auto; margin-right: auto"
+                  onclick="AntesProximo(this, 1, false, -1)"
+                >
+                  <img src="./assets/img/Proximo.png" alt="Proximo" />
+                </button>
+              </div>
+              <div id="myModal" class="modal">
+                <span id="fechar" class="close">&times;</span>
+                <img class="modal-content" id="img01" />
+                <div id="caption"></div>
+              </div>
+            </section>
+          </div>
           <div class="Instrucoes col-lg-2 col-md-8 col-sm-12 text-center mt-4">
             <section class="text-light pt-3" style="background-color: #1c203f">
               <!-- <p style="color: rgb(53, 53, 53); font-size: 26px">
@@ -582,66 +642,6 @@
                     </button>
                   </div>
                 </form>
-              </div>
-            </section>
-          </div>
-          <div class="col-lg-9 col-md-12 col-sm-12">
-            <hr class="linha" />
-            <h1
-              id="TituloDesafio"
-              class="TituloPagina text-uppercase gotham"
-            ></h1>
-            <hr class="linha" />
-            <section class="container" id="desafio" value="0">
-              <div id="instruções" class="">
-                <div
-                  class="row container align-items-center"
-                  style="margin-right: 0; margin-left: 0"
-                >
-                  <div id="DivTextoDesafio">
-                    <p
-                      id="TextoDesafio"
-                      class="gotham"
-                      style="
-                        color: black;
-                        text-align: justify !important;
-                        font-size: 20px;
-                      "
-                    ></p>
-                  </div>
-                  <img
-                    src=""
-                    class="img-thumbnail mt-3 col-lg-12 col-md-12 col-sm-12"
-                    id="ImagemDesafio"
-                    alt="Desafio"
-                    onclick="maximize_images(this)"
-                  />
-                </div>
-              </div>
-              <div class="AntesProximo align-items-center row">
-                <button
-                  id="Anterior"
-                  class="col-lg-1 col-md-2 col-3"
-                  name="0"
-                  style="margin-right: auto; margin-left: auto"
-                  onclick="AntesProximo(this, 0, false, -1)"
-                >
-                  <img src="./assets/img/Antes.png" alt="Anterior" />
-                </button>
-                <button
-                  id="Proximo"
-                  class="col-lg-1 col-md-2 col-3"
-                  name="0"
-                  style="margin-left: auto; margin-right: auto"
-                  onclick="AntesProximo(this, 1, false, -1)"
-                >
-                  <img src="./assets/img/Proximo.png" alt="Proximo" />
-                </button>
-              </div>
-              <div id="myModal" class="modal">
-                <span id="fechar" class="close">&times;</span>
-                <img class="modal-content" id="img01" />
-                <div id="caption"></div>
               </div>
             </section>
           </div>
