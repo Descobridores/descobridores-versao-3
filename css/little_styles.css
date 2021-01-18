@@ -34,7 +34,6 @@
   }
 
   .Instrucoes {
-    padding-top: 110px;
     margin-left: 5.5rem;
   }
 }
@@ -376,6 +375,7 @@ input:checked {
 }
 
 .linha {
+  width: 90%;
   background: #ec442636;
 }
 
