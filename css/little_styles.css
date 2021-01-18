@@ -22,6 +22,10 @@
   .Instrucoes {
     margin: auto;
   }
+
+  #menu-two-columns {
+    columns: 1;
+  }
 }
 
 @media screen and (min-width: 1100px) {
@@ -35,6 +39,10 @@
 
   .Instrucoes {
     margin-left: 5.5rem;
+  }
+
+  #menu-two-columns {
+    columns: 3;
   }
 }
 
@@ -74,10 +82,6 @@
   font-size: 15px;
   color: #1c203f;
   background-color: #fbdac3;
-}
-
-#menu-two-columns {
-  columns: 3;
 }
 .VinhetasIMG {
   height: 200px;
