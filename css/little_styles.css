@@ -10,6 +10,11 @@
 * {
   font-family: 'Gotham', sans-serif !important;
 }
+
+p {
+  text-align: justify;
+}
+
 @media screen and (max-width: 1100px) {
   .SubTitle {
     font-size: 30px;
@@ -430,6 +435,11 @@ input:checked {
   transform: scale(1.25);
   -webkit-filter: drop-shadow(15px 10px 5px rgba(40, 40, 40, 0.5));
   filter: drop-shadow(15px 10px 5px rgba(40, 40, 40, 0.5));
+}
+
+#scrollBar {
+  height: 500px;
+  overflow: auto;
 }
 
 .centreImage {
