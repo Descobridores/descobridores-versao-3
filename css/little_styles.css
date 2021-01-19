@@ -229,13 +229,6 @@ h3 {
   margin: 0;
 }
 
-p {
-  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  color: #fff;
-  line-height: 150%;
-}
-
 .azul {
   color: #008b9c;
 }
@@ -441,6 +434,12 @@ input:checked {
 #scrollBar {
   height: 500px;
   overflow: auto;
+}
+
+#scrollBar p,
+textarea,
+li {
+  margin-right: 20px;
 }
 
 .centreImage {
