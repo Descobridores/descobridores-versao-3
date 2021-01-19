@@ -443,6 +443,12 @@ input:checked {
   overflow: auto;
 }
 
+#scrollBar p,
+textarea,
+li {
+  margin-right: 20px;
+}
+
 .centreImage {
   display: block;
   margin-left: auto;
