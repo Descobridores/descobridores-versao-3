@@ -57,6 +57,13 @@ p {
     padding-bottom: 100px;
   }
 }
+
+.LinkTitulo {
+  color: #fcdac4;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #mainNav .ul .li {
   margin-right: 20px;
   margin-left: 20px;
