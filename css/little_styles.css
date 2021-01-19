@@ -389,7 +389,7 @@ input:checked {
 }
 
 .Lista li {
-  background-color: rgb(180, 180, 180);
+  /* background-color: rgb(180, 180, 180); */
   width: 85%;
   border-radius: 20px;
   margin-left: auto;
@@ -405,7 +405,8 @@ input:checked {
 .Lista li h4 a {
   color: #303033;
   line-height: 50px;
-  text-decoration: none;
+  /* text-decoration: none; */
+  text-decoration: underline;
   text-align: center;
 }
 
