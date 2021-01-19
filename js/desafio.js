@@ -1,24 +1,24 @@
 var Titulos = [
-  'Aposte na Soma', //0
-  'Construindo Pipas', //1
-  'Desafio da Escada', //2
-  'Desafio da Ilha', //3
-  'Desafio da Pá Suja', //4
-  'Desafio das Bandeiras', //5
-  'Desafio das Varetas', //6
-  'Desafio do Dragão', //7
-  'Flores no Jardim', //8
-  'Gincana das Alturas', //9
-  'Milu e Nala', //10
-  'Monstros na Roda', //11
-  'Organizando o Curral', //12
-  'Palitos Coloridos', //13
-  'Quantos Retângulos?', //14
-  'Sequência de Triângulos', //15
-  'Torre da Matilda', //16
-  'Triângulos Amigos', //17
-  'Triângulos no Pentágono', //18
-  'Triângulos Numéricos', //19
+  'APOSTE NA SOMA', //0
+  'CONSTRUINDO PIPAS', //1
+  'DESAFIO DA ESCADA', //2
+  'DESAFIO DA ILHA', //3
+  'DESAFIO DA PÁ SUJA', //4
+  'DESAFIO DAS BANDEIRAS', //5
+  'DESAFIO DAS VARETAS', //6
+  'DESAFIO DO DRAGÃO', //7
+  'FLORES NO JARDIM', //8
+  'GINCANA DAS ALTURAS', //9
+  'MILU E NALA', //10
+  'MONSTROS NA RODA', //11
+  'ORGANIZANDO O CURRAL', //12
+  'PALITOS COLORIDOS', //13
+  'QUANTOS RETÂNGULOS?', //14
+  'SEQUÊNCIA DE TRIÂNGULOS', //15
+  'TORRE DA MATILDA', //16
+  'TRIÂNGULOS AMIGOS', //17
+  'TRIÂNGULOS NO PENTÁGONO', //18
+  'TRIÂNGULOS NUMÉRICOS', //19
 ]
 
 var indice
