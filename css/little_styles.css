@@ -190,10 +190,8 @@ ul ul ul {
   position: absolute;
   top: 0;
   left: 0;
-  width: 256px;
-  height: 256px;
   z-index: 1;
-  clip: rect(0 256px 250px 0);
+  /* clip: rect(0 256px 250px 0); */
 }
 
 .janela_texto {
